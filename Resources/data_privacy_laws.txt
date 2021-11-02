@@ -1,0 +1,151 @@
+This Document sumarizes the Data Privacy Laws lecture by Christian Sillaber in the Course Privacy and Data Security.
+
+Personal comments (= what i conclude from this information is writen as #my comment#, while everything is just quotations from the slides
+
+Principles in Privacy Laws:
+* Accountability
+* Good faith
+* Transparency
+* Earnmarking
+* Data minimization
+* Correctness
+* Storage limitation
+* Integrity & Confidentiality
+
+These principles are summarized under the term "Lawfulness"
+
+General Data Protection Regulation (GDPR):
+In effect across the EU form May 25, 2018
+The Regulation is directly applicable to all processing of personal data in the EU or Data collected from EU data subjects 
+#due to the second part, this means that one can be sued for violating GDPR even if one is located outside the EU, if one processes data from "EU People"#
+New regulation includes significant escalation in potential penalties (fines up to 4% of global revenues)
+
+Enforcement activities are starting to roll in (see our graphics used in mid term presentation)
+
+GDPR Overview:
+* Applies to processing of "personal data" in the context of the activities of an establishment of a controller or a processor in the EU.
+* Applies where a controller or processor is not established in the EU but its processing activities are related to:
+	* Offering of goods or services to EU residents (payment is not necessarily provided)
+	* Monitoring the behavior of EU residents
+
+Essentially this means exterritorial applicability: If you want to access to the EU digital market, you should better follow GDPR.
+
+One goal of the Regulation was to achieve greater harmonization of requirements across the EU, however there exist 31 Variations (EU + UK + EFTA)
+
+GDPR Core Concepts:
+* Personal data: Any information relating to an identified or identifiable natural person.
+	* Sensible data: Personal data revealing racial, ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, health, sex life and secual orientation, genetic data and biometric data.
+	* Criminal Offences: Data relating to criminal offences and convictions.
+	* Health Data: Personal data relating to physical or mental health of an individual, including the provision of healt care services, which reveal information about his or her health status
+* Pseudonymization: "the processing of personal data in such a manner that the personal data can no longer be attributed to a specific data subject without the use of additional information provided that such additional information is kept separately and is subject to technical and organisational measures to ensure that the personal data are not attributed to an identified or identifieable natural person.
+* Anonymization: eliminates personal data so that data subjects can no longer be identified. Anonymized data is excluded from GDPR regulation altogether because anonymized data is no longer "personal data"
+* Processing: means any operation or set of operations performed upon personal data or sets of personal data, whether or not by automated means, such as collection, recording, organisation, structuring, storage, adaptation or alternation, retrieval, consultation, use, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction.
+
+E.g. a Dynamic IP Address is Personal Data!
+
+Data Controller (Art 24 GDPR):
+Determines the "why and how" personal data is processed (purpose and means)
+In general, controllers bear primary responsibility for ensuring that processing activities are compliant with EU data protection law
+
+Data Processor (Art 28 GDPR):
+Acts on the conroller's behalf. Binding written agreement. Controller must ensure processor's compliance.
+
+Joint Controller (Art 26 GDPR):
+#Slides do not provide information on what this is, but i assume it's an Entity that is Controller and Processor simultanously, e.g. a Company that collects personal data and then processes that data on it's own.#
+
+Data subject rights under GDPR:
+* Right of access (Art. 15)
+* Right to rectification (Art. 16)
+* Right to erasure (Art. 17)
+* Right to restriction (Art. 18)
+* Right to data portability (Art. 20)
+* Right to object (Art. 21)
+* Right not to be subject to decisions based solely on automated processing which produces legal or similarly significant effects (Art. 22)
+
+GDPR Processes and Artifacts:
+Data Protection Impact Assessments (DPIAs) are documents that evaluate risks and stuff regarding data protection which must be written whenever processing is likely to result in high risk to data subjects. 
+#This can always be done, thus this is probably not particularly interesting to us#
+Records of Processing: Controllers/Processors must maintain records on data processing operations, e.g. name of data subjects (details see slides)
+Data Breach Notification: Controllers must inform authorities about data breaches asap unless there is no risk for data subjects
+
+GDPR Roles:
+Companies that process sensitive data must appoint a data protection officer, that reports to highest levels of management.
+
+GDPR Sanctions
+* Violation of controllers with respect to record-keeping, security, breach notification and privacy impact assassments are subject to a maximum penalty of 10 million euro or 2% of entity's global gross revenue (whichever is higher).
+* Violation of controllers with respect to having a legal justification for processing, complying with the rights of data subjects and cross-border data transfers are subject to a maximum penalty of 20 million euro or 4% of entity's global gross revenue (whichever is higher).
+* Data subjects have right to compensation for damage resulting from violation of Regulation (This is often impossible to proof)
+* Data subjects can authorize non-profit, public interest bodies to bring complaints on their behalf for the same purposes (e.g. NOYB in Austria)
+
+GDPR Consent to processing of data:
+Must be:
+* Freely given
+* Specific
+* Informed
+* Unambiguous indication of individual's wishes
+
+* Data subjects must be able to withdraw consent at any time without detriment
+* Controller must maintain a record of consent until related processing is complete
+
+Freely given consent: Individual must have a real choice, can't feel compelled to consent and no negative consequences if consent is not given.
+* Consent can't be 'bundled' with acceptance of other terms and conditions
+* Consent can't be 'tied' to the provision of a contract or service where the processing is not strictly necessary for the performance of such contract or service
+* If controller is able to show that a service includes the possibility to withdraw consent without any negative consequences (e.g. without performance penalty) this may show that the consent was given freely.
+* Separate consent should be possible when engaging in multiple processing activities for more than one purpose.
+* If the controller conflated several purposes for processing and has not attempted to seek separate consent for each purpose, there is a lack of freedom.
+
+The Controller Side:
+* Obligation to demonstrate data subject's consent (and ensure potential withdrawal).
+* Should keep clear records of what a person has consented to, when and how you got this consent, so that you can demonstrate compliance in the event of a complaint.
+In particular:
+	* date of consent
+	* method of consent
+	* who obtained consent
+	* what information was provided to the person consenting
+* Organizations must make sure that they can produce effective audit trails of how and when consent was given i.o to give evidence of consent if challenged.
+
+GDPR Lawfulness:
+* Processing of personal data requires legal basis
+* Additional requirements when processing sensitive personal data
+* Data subjects have the right to reveive data privacy notice when data is collected about them.
+
+Privacy Policy:
+* Should provide basic information and easily understanable description of processing activities.
+* Data subject must be well informed after reading
+
+Data Subject Rights under GDPR in detail:
+#from https://gdpr-info.eu#
+
+* Right of access (Art. 15)
+#This essentially states that a Data Subject can ask a controller to provide all personal information that was collected about the data subject#
+
+* Right to rectification (Art. 16)
+#wrong/incomplete data must be rectified/completed by the controller if the data subject requests this#
+
+* Right to erasure (Art. 17)
+#
+	* Data subject can request controller to delete personal information
+	* controller must by himself delete information under certain circumstances (e.g. personal data no longer necessary, data subject withdraws consent, data must be deleted due to other laws)
+	* Controller must inform related controllers/processors that they must delete personal data that was received from the controller about this data subject
+	* There are exceptions, where deletion can not be requested, e.g. due to:
+		* right of freedom of expression and information
+		* legal obligations
+		* public interest
+		* archiving purposes in public interest, scientific/historical research, statistical purposes
+		* esttablishment, excercise or defence of legal claims
+#
+
+* Right to restriction (Art. 18)
+#data subject can under certain circumstances restrict data processing#
+
+* Right to data portability (Art. 20)
+#data subject can request to see the collected data in a human and machine readable format, furthermore it can transfer the data to another controller#
+
+* Right to object (Art. 21)
+#A data subject can usually object to data processing, in this case usually a controller is no longer alowed to process personal data of the subject#
+
+* Right not to be subject to decisions based solely on automated processing which produces legal or similarly significant effects (Art. 22)
+# Under normal circumstances, a decision producing legal or similarly significant effect, can not be fully automated (a human must look at it aswell). One exception is when the decision is necessary for the controller to get into a contract with the data subject #
+
+
+

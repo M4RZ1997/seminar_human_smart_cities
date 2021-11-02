@@ -9,6 +9,9 @@ LaTeX Files
 *.pdf
 *.synctex
 *.toc
+*.blg
+*.fls
+*.fdb_latexmk
 
 ###################################################################
 JetBrains
