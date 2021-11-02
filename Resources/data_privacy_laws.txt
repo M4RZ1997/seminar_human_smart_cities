@@ -52,6 +52,7 @@ Acts on the conroller's behalf. Binding written agreement. Controller must ensur
 
 Joint Controller (Art 26 GDPR):
 #Slides do not provide information on what this is, but i assume it's an Entity that is Controller and Processor simultanously, e.g. a Company that collects personal data and then processes that data on it's own.#
+#Wrong, thats when multiple parties are controller together.#
 
 Data subject rights under GDPR:
 * Right of access (Art. 15)
