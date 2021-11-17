@@ -1,6 +1,7 @@
 \documentclass[a4paper,12pt]{report}
 \usepackage{unifrsr}
 \usepackage{hsc_texstyle}
+\usepackage{hyperref}
 \usepackage[style=alphabetic, backend=bibtex]{biblatex}
 \addbibresource{references.bib}
 
@@ -40,7 +41,7 @@
 
 	\tableofcontents
 
-	\chapter{Introduction}
+	\chapter{Example Chapter}
 		This is an example of a section. As you see, it is just a standard {\LaTeX} section. Here is a footnote%
 		\footnote{This is a footnote}.
 
@@ -49,7 +50,30 @@
 			It's all standard \LaTeX, as you can see. This is a very nice paper:
 			\nocite{*}
 		\closesection
-		
+
+	\chapter{Introduction}
+		\section{Background and Motivation}
+		\startsection
+			Wisdom of the Crowd is the idea, that large collectives are supperior to individual experts in problem-solving, decision-making, innovating, and predicting \footnote{\url{https://www.investopedia.com/terms/w/wisdom-crowds.asp}}. 
+			Human Smart Cities have an enormous interest in extracting the Wisdom of the Crowd as a foundation for better decision making.
+			One suitable and broadly applied approach is crowd sourcing.
+			Since data protection regulations are in effect across the world, crowd sourcing comes at a risk: if one does not comply with the relevant regulations, sanctions might be applied.
+			This conflict is particularly topical, since the General Data Protection Regulation, referred to as GDPR, came into effect across the European Union in 2018.
+			As Figure \ref{fig:enforcement_tracker} shows, enforcement activities have started to roll in over the past year. This forces in particular European (but potentially also other) Cities to comply with the GDPR.
+		\closesection
+
+		\section{Problem Statement and Research Question}
+		\startsection
+			\begin{enumerate}
+				\item What methods do exist in order to gather information from citizen?
+				\item What aspects do Human Smart Cities need to consider in order to comply with GDPR?
+			\end{enumerate}
+		\closesection
+	
+	\chapter{Methodology}
+	\startsection
+	\closesection
+
 	\chapter{General Data Protection Regulation}
 	\chaptermark{GDPR}
 	The General Data Protection Regulation, referred to as GDPR, is in effect across the European Union from May 25, 2018.
