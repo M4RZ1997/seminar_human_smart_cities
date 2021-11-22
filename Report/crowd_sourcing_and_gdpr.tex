@@ -40,7 +40,16 @@
 	\end{abstract}
 
 	\tableofcontents
-	\nocite{*}
+
+	\chapter{Example Chapter}
+		This is an example of a section. As you see, it is just a standard {\LaTeX} section. Here is a footnote%
+		\footnote{This is a footnote}.
+
+		\section{Background and Motivation}
+		\startsection
+			It's all standard \LaTeX, as you can see. This is a very nice paper:
+			\nocite{*}
+		\closesection
 
 	\chapter{Introduction}
 		\section{Background and Motivation}
@@ -62,16 +71,7 @@
 		\closesection
 	
 	\chapter{Methodology}
-	
-	\section{Nokia AVA}
-	\startsection
-		\subsection{Case studies}
-		\startsubsection
-		\closesection
-	\closesection	
-	\section{Others}
-	\startsection
-	\closesection
+
 	\chapter{General Data Protection Regulation}
 	\chaptermark{GDPR}
 	The General Data Protection Regulation, referred to as GDPR, is in effect across the European Union from May 25, 2018.
@@ -92,7 +92,7 @@
 	There are three subtypes of interest to personal data. 
 	First of, \textbf{sensible data} is defined as personal data that is revealing race, ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, health, sex life and sexual orientation, genetic data or biometric data.
 	Next, there is data relating to \textbf{criminal offences} and convictions.
-	Finally, \textbf{health data} is personal data relating to physical or mental health of an individual, including the provision of healt care services, which reveal information about his or her health status.\\
+	Finally, \textbf{health data} is personal data relating to physical or mental health of an individual, including the provision of health care services, which reveal information about his or her health status.\\
 	\textbf{Pseudonymization} is the processing of personal data in such a manner that the personal data can no longer be attributed to a specific data subject without the use of additional information, provided that such additional information is kept separately and is subject to technical and organisational measures to ensure that the personal data are not attributed to an identified or identifieable natural person.
 	\textbf{Anonymization} eliminates personal data so that data subjects can no longer be identified. 
 	Anonymized data is excluded from GDPR altogether because anonymized data is no longer personal data.
@@ -130,13 +130,13 @@
 		Generally, given such a scenario, a controller must comply with such a request and furthermore inform all processors and joint controllers to eliminate the appropriate data aswell.
 		Furthermore the same procedure must be executed without being requested to do so under certain circumstances.
 		For instance this applies, if the personal data is no longer necessary, the data subject has withdrawen consent or a delation is mandatory due to other laws.
-		Ereasure of personal data is not lawful, if higher interests are diminished, controllers must namely not comply with such requests, when
+		Erasure of personal data is not lawful, if higher interests are diminished, controllers must namely not comply with such requests, when
 		\begin{enumerate}
 			\item the right of freedom of expression and information would be violated
 			\item the controllers can not follow legal obligations without the personal data
 			\item there is a public interest
 			\item personal data is archived in public interest, used for scientific or historical research, or is used for statistical purposes
-			\item the data is used to establish, excercise or defend of legal claims
+			\item the data is used to establish, exercise or defend of legal claims
 		\end{enumerate}
 		\item Right to restriction (Art. 18):
 		In General, a data subject has the right to restrict processing of it's personal data.
@@ -187,8 +187,52 @@
 	The first group is subject to a maximum penalty of the highest of 10 million Euro or 2 \% of the entity's global revenue and the second group is subject to a maximum penalty of the highest of 20 million Euro or 4 \% of the entity's global revenue
 	\closesection
 	
+	
+	
+	
 	\chapter{Crowd-Sourcing Methods}
+	Before concerns regarding privacy of crowd-sourcing methods can be addressed, it is imperative to list a subset of the available options that are in use today.
+	\section{Nokia AVA}
+	[Source https://www.nokia.com/networks/portfolio/insights-and-analytics/]\\
+	The company Nokia developed a series of analytical services and AI products for other communication service providers under the name Nokia AVA, which stands for Analytics, Virtualisation, and Automation. Nokia AVA aims to analyse the network and customer data of the providers for improvements in customer care and engagement, their service operations and how to further optimize the network itself.
+	To better showcase the benefits of their product, Nokia has made three case studies available on their homepage, namely for Vodafone, POST Luxembourg and China Mobile.
 	\startsection
+	\subsection{Nokia AVA case studies}
+	\subsubsection{Vodafone anomaly detection in Italy}
+	[See above link on site]
+	Vodafone decide to launch an anomaly detection application in Italy in partnership with Nokia for their network planning and optimisation. Vodafone has provided their own network data, while Nokia provided the applications and models for successful implementation. Vodafone noted an increase in operational efficiency of 25-30\% and plans to deploy to other countries.
+	
+	\subsection{POST Luxembourg} 
+	[See above link on site]
+	POST Luxembourg wanted to reduce operational costs and increase customer satisfaction by diagnosing issues on the network through AI application and increasing the efficiency of their field technicians.
+	For this POST Luxembourg used Nokia's home and access insight solution, which is aimed at analysing and resolving network issues. The usage resulted in a 95\% correct or helpful diagnosis received by their field staff.
+	
+	\subsubsection{China Mobile}
+	China Mobile was concerned with increased energy usage across their network especially due to rolling out 5G, and searched for an intelligent energy management system that does not impact customer experience.
+	A solution has been found in the form of Nokia AVA for Energy Efficiency, and resulted in a reduction of short-term energy use of 5\%, made future reduction of 20\% possible, reduced air conditioning energy usage by 74\%, generally balanced performance requirements with energy saving, and maintained the network performance successfully.
+	\closesection	
+	\section{Other methods}
+	\startsection
+	\subsection{New York City building inspection}
+	New Yorks department of buildings had too few inspectors to cover all complaints about illegal conversions of apartments in a sensible manner in the year 2011. This is a complicated situation as such conversions of living space increases the risk fire hazards among other dangers. As an answer, a team led by Michael FLowers has used predictive analytics have been used to prioritize the complaints by also incorporation the experience of senior inspectors. [Michael Flowers, “Chapter 15. Beyond open data: The data-driven city,” Beyond Transparency: 2013 Code for America, October 16, 2013, http://beyondtransparency.org/chapters/part-4/beyond-open-data-the-data-driven-city/.]\\
+	Thanks to this new prioritization, the false positives of the complaints have been drastically reduced, which increased the ration of resulting vacation orders from 13\% to 70\%. [Alex Howard, “Predictive data analytics is saving lives and taxpayer dollars in New York City,” O’Reilly Radar, June 26, 2012, http://radar.oreilly.com/2012/06/predictive-data-analytics-big-data-nyc.html.]\\
+	Additionally, this has positively influenced the incidents of deaths due to fire incidents as mentioned by the city. [Viktor Schönberger and Kenneth Cukier, “Big data in the Big Apple,” Slate, March 6, 2013, www.slate.com/articles/technology/future_tense/2013/03/big_data_excerpt_how_mike_flowers_revolutionized_new_york_s_building_inspections.html.]
+[FDNY Foundation, “FDNY records first month with zero fire-related deaths in department history,” July 5, 2015, www.fdnyfoundation.org/fdny-records-first-month-with-zero-fire-related-deaths-in-department-history/.]
+
+	
+	
+	
+	
+
+	\subsection{Wiki survey in New York city}
+
+	\subsection{Street Bump}
+	https://www2.deloitte.com/us/en/insights/deloitte-review/issue-20/people-for-smarter-cities-collective-intelligence-decision-making.html or [EGG17]\\	
+	
+	\subsection{StarHub and Nokia}
+	[https://www.marketing-interactive.com/nokia-and-starhub-join-analytics-force-hopeful-in-creating-effective-advertising]
+	A further partnership betweeen Nokia and the singaporean  based communication provider StarHub has been created with the goal of 'effective advertising'. This means that marketers can for example plan their future business locations and placements of advertisements due to gained insights from consumer travel patterns. StarHub hereby plans to use Nokia AVA and other capabilities from Nokia. 
+	
 	\closesection
 
 	\chapter{Considerations in Designing Crowd-Sourcing Methods}
