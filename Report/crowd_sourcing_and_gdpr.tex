@@ -41,45 +41,39 @@
 
 	\tableofcontents
 
-	\chapter{Example Chapter}
-		This is an example of a section. As you see, it is just a standard {\LaTeX} section. Here is a footnote%
-		\footnote{This is a footnote}.
-
-		\section{Background and Motivation}
-		\startsection
-			It's all standard \LaTeX, as you can see. This is a very nice paper:
-			\nocite{*}
-		\closesection
-
+	\nocite{*}
+	
 	\chapter{Introduction}
-		\section{Background and Motivation}
-		\startsection
-			Wisdom of the Crowd is the idea, that large collectives are supperior to individual experts in problem-solving, decision-making, innovating, and predicting \footnote{\url{https://www.investopedia.com/terms/w/wisdom-crowds.asp}}. 
-			Human Smart Cities have an enormous interest in extracting the Wisdom of the Crowd as a foundation for better decision making.
-			One suitable and broadly applied approach is crowd sourcing.
-			Since data protection regulations are in effect across the world, crowd sourcing comes at a risk: if one does not comply with the relevant regulations, sanctions might be applied.
-			This conflict is particularly topical, since the General Data Protection Regulation, referred to as GDPR, came into effect across the European Union in 2018.
-			As Figure \ref{fig:enforcement_tracker} shows, enforcement activities have started to roll in over the past year. This forces in particular European (but potentially also other) Cities to comply with the GDPR.
-		\closesection
+	\section{Background and Motivation}
+	\startsection
+		Wisdom of the Crowd is the idea, that large collectives are supperior to individual experts in problem-solving, decision-making, innovating, and predicting \footnote{\url{https://www.investopedia.com/terms/w/wisdom-crowds.asp}}. 
+		Human Smart Cities have an enormous interest in extracting the Wisdom of the Crowd as a foundation for better decision making.
+		One suitable and broadly applied approach is crowd sourcing.
+		Since data protection regulations are in effect across the world, crowd sourcing comes at a risk: if one does not comply with the relevant regulations, sanctions might be applied.
+		This conflict is particularly topical, since the General Data Protection Regulation, referred to as GDPR, came into effect across the European Union in 2018.
+		As Figure \ref{fig:enforcement_tracker} shows, enforcement activities have started to roll in over the past year. This forces in particular European (but potentially also other) Cities to comply with the GDPR.
+	\closesection
 
-		\section{Problem Statement and Research Question}
-		\startsection
-			\begin{enumerate}
-				\item What methods do exist in order to gather information from citizen?
-				\item What aspects do Human Smart Cities need to consider in order to comply with GDPR?
-			\end{enumerate}
-		\closesection
+	\section{Problem Statement and Research Question}
+	\startsection
+		\begin{enumerate}
+			\item What methods do exist in order to gather information from citizen?
+			\item What aspects do Human Smart Cities need to consider in order to comply with GDPR?
+		\end{enumerate}
+	\closesection
+	
 	
 	\chapter{Methodology}
 
-	\chapter{General Data Protection Regulation}
-	\chaptermark{GDPR}
+
+	\chapter{General Data Protection Regulation} \chaptermark{GDPR}
 	The General Data Protection Regulation, referred to as GDPR, is in effect across the European Union from May 25, 2018.
 	The Regulation is directly applicable to processing of personal data in the European Union and data collected from its data subjects.
 	One central aspect of the regulation is, that it inludes a significant escalation in potential penalties (up to 4\% of the global revenue).
 	Figure \ref{fig:enforcement_tracker} shows how enforcement activities increase from commencement until October 2021.
 	For instance, Amazon was fined 746 million \texteuro \ in July 2021 \cite{EnforcementTracker}
 	\begin{figure}
+		\centering
 		\includegraphics{EnforcementTracker_21-10-12.PNG}
 		\caption{Enforcement activities \cite{EnforcementTracker}}
 		\label{fig:enforcement_tracker}
@@ -116,7 +110,7 @@
 	\end{enumerate}
 	\closesection
 
-	\section{Data subject rights}
+	\section{Data Subject Rights}
 	\startsection
 	A identified or identifiable natural person, subject to it's data being processed by a controller, is called a \textbf{data subject}.
 	Each data subject has a set of rights under GDPR:
@@ -168,7 +162,7 @@
 	it can not be tied to the provision of a contract or service, if the processing is not strictly neccessary for the perfomance of such a contract or service and
 	data subject should be able to selectively consent to separate processing activities - i.e. a data subject should be able to consent to processing of performance data but reject processing of marketing data.\\
 	Due to the above regulations, contollers must manage to demonstrate data subject's consent and ensure potential withdrawal.
-	Therefor controllers should keep clear records of what a person has consented to, when and how consent was obtained i.o to be able to give evidence of consent if challenged.
+	Therefor controllers should keep clear records of what a person has consented to, when and how consent was obtained i.o to be able to give evidence of consent if challenged. 
 	In particular, controllers should store:
 	\begin{itemize}
 		\item date of consent
@@ -188,83 +182,80 @@
 	\closesection
 	
 	
-	
-	
 	\chapter{Crowd-Sourcing Methods}
 	Before concerns regarding privacy of crowd-sourcing methods can be addressed, it is imperative to list a subset of the options that are in use today.
-	\section{Nokia AVA}
-	%[Source https://www.nokia.com/networks/portfolio/insights-and-analytics/]\\
-	The company Nokia developed a series of analytical services and AI products for other communication service providers under the name Nokia AVA, which stands for Analytics, Virtualisation, and Automation. Nokia AVA aims to analyse the network and customer data of the providers for improvements in customer care and engagement, their service operations and how to further optimize the network itself.
-	To better showcase the benefits of their product, Nokia has made three case studies available on their homepage, namely for Vodafone, POST Luxembourg and China Mobile.
-	\startsection
-	\subsection{Nokia AVA case studies}
-	\subsubsection{Vodafone anomaly detection in Italy}
-	%[See above link on site]
-	Vodafone decide to launch an anomaly detection application in Italy in partnership with Nokia for their network planning and optimisation. Vodafone has provided their own network data, while Nokia provided the applications and models for successful implementation. Vodafone noted an increase in operational efficiency of 25-30\% and plans to deploy to other countries.
 	
-	\subsection{POST Luxembourg} 
-	%[See above link on site]
-	POST Luxembourg wanted to reduce operational costs and increase customer satisfaction by diagnosing issues on the network through AI application and increasing the efficiency of their field technicians.
-	For this POST Luxembourg used Nokia's home and access insight solution, which is aimed at analysing and resolving network issues. The usage resulted in a 95\% correct or helpful diagnosis received by their field staff.
-	
-	\subsubsection{China Mobile}
-	China Mobile was concerned with increased energy usage across their network especially due to rolling out 5G, and searched for an intelligent energy management system that does not impact customer experience.
-	A solution has been found in the form of Nokia AVA for Energy Efficiency, and resulted in a reduction of short-term energy use of 5\%, made future reduction of 20\% possible, reduced air conditioning energy usage by 74\%, generally balanced performance requirements with energy saving, and maintained the network performance successfully.
-	\closesection	
-	\section{Additional methods}
+	\section[Nokia AVA]{Nokia AVA \cite{NokiaAVACrowdAnalytics}}
 	\startsection
-	\subsection{New York City building inspection}
-	New Yorks department of buildings had too few inspectors to cover all complaints about illegal conversions of apartments in a sensible manner in the year 2011. This is a complicated situation as such conversions of living space increases the risk fire hazards among other dangers. As an answer, a team led by Michael Flowers has used predictive analytics have been used to prioritize the complaints by also incorporation the experience of senior inspectors. 
-	%[Michael Flowers, “Chapter 15. Beyond open data: The data-driven city,” Beyond Transparency: 2013 Code for America, October 16, 2013, http://beyondtransparency.org/chapters/part-4/beyond-open-data-the-data-driven-city/.]\\
-	Thanks to this new prioritization, the false positives of the complaints have been drastically reduced, which increased the ration of resulting vacation orders from 13\% to 70\%. 
-	%[Alex Howard, “Predictive data analytics is saving lives and taxpayer dollars in New York City,” O’Reilly Radar, June 26, 2012, http://radar.oreilly.com/2012/06/predictive-data-analytics-big-data-nyc.html.]\\
-	Additionally, this has positively influenced the incidents of deaths due to fire incidents as mentioned by the city. 
-	%[Viktor Schönberger and Kenneth Cukier, “Big data in the Big Apple,” Slate, March 6, 2013, www.slate.com/articles/technology/future_tense/2013/03/big_data_excerpt_how_mike_flowers_revolutionized_new_york_s_building_inspections.html.]
-%[FDNY Foundation, “FDNY records first month with zero fire-related deaths in department history,” July 5, 2015, www.fdnyfoundation.org/fdny-records-first-month-with-zero-fire-related-deaths-in-department-history/.]
+		The company Nokia developed a series of analytical services and AI products for other communication service providers under the name Nokia AVA, which stands for Analytics, Virtualisation, and Automation. Nokia AVA aims to analyse the network and customer data of the providers for improvements in customer care and engagement, their service operations and how to further optimize the network itself.
+		To better showcase the benefits of their product, Nokia has made three case studies available on their homepage, namely for Vodafone, POST Luxembourg and China Mobile.
+		\subsection{Case Studies}
+		\startsubsection
+			In the following sections different case studies of Nokia are presented and exemplified.
+			\subsubsection{Vodafone Anomaly Detection in Italy}
+				Vodafone decide to launch an anomaly detection application in Italy in partnership with Nokia for their network planning and optimisation. Vodafone has provided their own network data, while Nokia provided the applications and models for successful implementation. Vodafone noted an increase in operational efficiency of 25-30\% and plans to deploy to other countries.	
+			\subsubsection{POST Luxembourg} 
+				POST Luxembourg wanted to reduce operational costs and increase customer satisfaction by diagnosing issues on the network through AI application and increasing the efficiency of their field technicians.
+			For this POST Luxembourg used Nokia's home and access insight solution, which is aimed at analysing and resolving network issues. The usage resulted in a 95\% correct or helpful diagnosis received by their field staff.
+			\subsubsection{China Mobile}
+				China Mobile was concerned with increased energy usage across their network especially due to rolling out 5G, and searched for an intelligent energy management system that does not impact customer experience.
+			A solution has been found in the form of Nokia AVA for Energy Efficiency, and resulted in a reduction of short-term energy use of 5\%, made future reduction of 20\% possible, reduced air conditioning energy usage by 74\%, generally balanced performance requirements with energy saving, and maintained the network performance successfully.
+		\closesection
+	\closesection
 
+	\sectionmark{Nokia AVA}
+	\section{New York City Building Inspection}
+	\startsection
+		New Yorks department of buildings had too few inspectors to cover all complaints about illegal conversions of apartments in a sensible manner in the year 2011. This is a complicated situation as such conversions of living space increases the risk fire hazards among other dangers. As an answer, a team led by Michael Flowers has used predictive analytics have been used to prioritize the complaints by also incorporation the experience of senior inspectors \cite{BeyondOpenData}. \\
+		Thanks to this new prioritization, the false positives of the complaints have been drastically reduced, which increased the ration of resulting vacation orders from 13\% to 70\% \cite{PredictiveDataAnalytics}.
+		Additionally, this has positively influenced the incidents of deaths due to fire incidents as mentioned by the city \cite{BigDataBigApple} \cite{FDNY}.
+	\closesection
 
-	\subsection{Wiki survey in New York city}
-%[https://www.bitbybitbook.com/en/asking-questions/how/wiki/]\\
-Wiki surveys differ from normal surveys in the way that the answers do not have a finite number, but are in an open form, so that each participant can give answers outside of the expected scope. These outside answers are also exactly the reason to perform such a survey as it allows for new perspectives to be considered. For example New York City performed a wiki survey in 2010 on its sustainability plans, and the eigth of the top ten ideas where generated from the survey takers instead of being in the set of seed answers.
+	\section[Wiki Survey in New York City]{Wiki Survey in New York City \cite{BitbyBit}}
+	\startsection
+		Wiki surveys differ from normal surveys in the way that the answers do not have a finite number, but are in an open form, so that each participant can give answers outside of the expected scope. These outside answers are also exactly the reason to perform such a survey as it allows for new perspectives to be considered. For example New York City performed a wiki survey in 2010 on its sustainability plans, and the eigth of the top ten ideas where generated from the survey takers instead of being in the set of seed answers.
+	\closesection
 
-
-	\subsection{Waze and Boston}
-	%[https://www.americancityandcounty.com/2016/02/03/the-information-superhighway/]\\
-	Waze is an application that specialises on route planning and traffic avoidance.
+	\section[Waze and Boston]{Waze and Boston \cite{InformationSuperhighway}}
+	\startsection
+		Waze is an application that specialises on route planning and traffic avoidance.
 	Bostons traffic management department partnered with Waze to combat the cities traffic issues. Waze delivers hereby the data of driving app users to the Boston traffic engineers which then adjust the cities traffic signals. The traffic department also sends back this updated information in addition with future planned adjustements to Waze in turn.
+	\closesection
 
-	\subsection{Street Bump and Boston}
-	%https://www2.deloitte.com/us/en/insights/deloitte-review/issue-20/people-for-smarter-cities-collective-intelligence-decision-making.html or [EGG17]\\
-	In the same manner as the Waze partnership, Boston used the Street Bump application for combating and mapping bumpy roads and potholes. This allowed the city to repair the worst cases of potholes and, as an unexpected side benefit, sunken manhole covers.
+	\section[Street Bump and Boston]{Street Bump and Boston \cite{EGG17}}
+	\startsection
+		In the same manner as the Waze partnership, Boston used the Street Bump application for combating and mapping bumpy roads and potholes. This allowed the city to repair the worst cases of potholes and, as an unexpected side benefit, sunken manhole covers.
+	\closesection
 	
-	\subsection{Yelp and Boston}
-	%[https://www.govtech.com/dc/articles/what-can-boston-restaurant-inspectors-learn-from-yelp-reviews.html]\\
-	A third partnership performed by Boston, was with Yelp and economists from Harvard to tackle the issue of health inspections at restaurants b using predictive algorithms and experience from health inspectors.
-	Instead of random inspections, information from recent customer reviews on Yelp and historical patterns are taken into account to better target the restaurants under suspicion of health code violations. The increase in found violations has been estimated to be around 30\%-50\%.
-	%[Peter Bull, Isaac Slavitt, and Greg Lipstein, “Harnessing the power of the crowd to increase capacity for data science in the social sector,” 2016 ICML Workshop on #Data4Good, June 24, 2016, https://arxiv.org/pdf/1606.07781.pdf.][Edward L. Glaeser et al., “Crowdsourcing city government: Using tournaments to improve inspection accuracy,” NBER working paper no. 22124, March 2016, www.scottkom.com/articles/Glaeser_Hillis_Kominers_Luca_Crowdsourcing_City_Government.pdf.]
+	\section[Yelp and Boston]{Yelp and Boston \cite{YelpBoston}}
+	\startsection
+		A third partnership performed by Boston, was with Yelp and economists from Harvard to tackle the issue of health inspections at restaurants b using predictive algorithms and experience from health inspectors.
+		Instead of random inspections, information from recent customer reviews on Yelp and historical patterns are taken into account to better target the restaurants under suspicion of health code violations. The increase in found violations has been estimated to be around 30\%-50\% \cite{BSL16} \cite{Gla16}.
+	\closesection	
 	
+	\section[StarHub and Nokia]{StarHub and Nokia \cite{StarhubNokia}}
+	\startsection
+		A further partnership between Nokia and the singaporean  based communication provider StarHub has been created with the goal of 'effective advertising'. This means that marketers can for example plan their future business locations and placements of advertisements due to gained insights from consumer travel patterns. StarHub hereby plans to use Nokia AVA and other capabilities from Nokia. 
+	\closesection
 	
-	\subsection{StarHub and Nokia}
-	%[https://www.marketing-interactive.com/nokia-and-starhub-join-analytics-force-hopeful-in-creating-effective-advertising]
-	A further partnership between Nokia and the singaporean  based communication provider StarHub has been created with the goal of 'effective advertising'. This means that marketers can for example plan their future business locations and placements of advertisements due to gained insights from consumer travel patterns. StarHub hereby plans to use Nokia AVA and other capabilities from Nokia. 
-	
-	\subsection{Test case studies and modeling}
-	%[[CDA16] Crowd-Sourcing for Smart Cities ]
-	Test case studies have been performed with current examples of crowd-sourcing like Street Bump to show how certain sectors can profit from crowd-sourcing methods. For example in the dimension of transportation, it would be possible to dynamically allocate parking spaces with crowd-sourcing or similar to previous examples the app CycleAtlanta that records bycicle trips and sends the data to the city planners of Atlanta. In the sector of education, sites like Khan Academy or Un-Academy allow for educators to teach to groups of all ages. Other education based sites that use crowd-sourced of users are for example sites like Wikipedia, Quora or StackExchange. In the sector of healthcare, there exist websites where users can share their patient experiences and receive information about sickness and diseases.
+	\section[Test Case Studies and Modeling]{Test Case Studies and Modeling \cite{CrowdSourcing}}
+	\startsection
+		Test case studies have been performed with current examples of crowd-sourcing like Street Bump to show how certain sectors can profit from crowd-sourcing methods. For example in the dimension of transportation, it would be possible to dynamically allocate parking spaces with crowd-sourcing or similar to previous examples the app CycleAtlanta that records bycicle trips and sends the data to the city planners of Atlanta. In the sector of education, sites like Khan Academy or Un-Academy allow for educators to teach to groups of all ages. Other education based sites that use crowd-sourced of users are for example sites like Wikipedia, Quora or StackExchange. In the sector of healthcare, there exist websites where users can share their patient experiences and receive information about sickness and diseases.
 	%There are more examples though I think this is ok for now.
-	
-	
-	
-	
-	\subsection{Mobile crowd-sourcing}
+	\closesection
+
+	\section[Mobile Crowd-Sourcing]{Mobile Crowd-Sourcing \cite{MobileCrowdSourcing}}
+	\startsection
 	%[[KLJ+19] Mobile Crowdsourcing in Smart Cities: Technologies, Applications, and Future Challenges]
-	Mobile crowd-sourcing puts the various sensors and systems of mobile devices in focus. As in previous sections seen this allows for optimal data gathering in domains like monitoring of traffic for example.
-	The most common architecture of mobile crowd-sourcing is made up of three entities, namely the working crowd, service providers, and end-users. The workers perform tasks received by the service providers and return the results. Service providers receive requests from end-users and divide them into smaller subtasks for its workers to perform before sending finished tasks back to its end-users. The service providers also collects and processes data, and is also responsible for evaluating its participants if needed. The end-users can send request to the providers and also evaluate the results later.\\
-	To better decide which workers are suited for which tasks, a task recommendation and allocation system can be used that, for example, collects and analyses the participants context information, like location, usage of the platform, previous work evaluation, and other data points. Such a system can improve the efficiency of task assignment in the context of throughput and quality.\\
+		Mobile crowd-sourcing puts the various sensors and systems of mobile devices in focus. As in previous sections seen this allows for optimal data gathering in domains like monitoring of traffic for example.
+		The most common architecture of mobile crowd-sourcing is made up of three entities, namely the working crowd, service providers, and end-users. The workers perform tasks received by the service providers and return the results. Service providers receive requests from end-users and divide them into smaller subtasks for its workers to perform before sending finished tasks back to its end-users. The service providers also collects and processes data, and is also responsible for evaluating its participants if needed. The end-users can send request to the providers and also evaluate the results later.\\
+		To better decide which workers are suited for which tasks, a task recommendation and allocation system can be used that, for example, collects and analyses the participants context information, like location, usage of the platform, previous work evaluation, and other data points. Such a system can improve the efficiency of task assignment in the context of throughput and quality.
 	% There is more information about MCS, should this also be added?
 	% The paper also states some possible further applications of MCS
-	\subsubsection{Privacy control of MCS}
-	Privacy concerns arise due to the need of environmental data of the participants for the task recommendation system. If the system does not have any safety measures an attack can breach the privacy  of the platform.  
+		\subsection{Privacy control of Mobile Crowd-Sourcing}
+		\startsubsection
+			Privacy concerns arise due to the need of environmental data of the participants for the task recommendation system. If the system does not have any safety measures an attack can breach the privacy  of the platform.
+			\closesection  
 	\closesection
 
 
@@ -275,8 +266,7 @@ Wiki surveys differ from normal surveys in the way that the answers do not have 
 	\chapter{Related Work \cite{LanierWeylBlueprint}}
 	\startsection
 	\closesection
-
-
+	
 	\newpage
 	\addcontentsline{toc}{chapter}{Bibliography}
 	\printbibliography
