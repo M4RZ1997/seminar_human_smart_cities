@@ -1,0 +1,29 @@
+Generally, to us it's more important to see how a method works, not what it is used for.
+I think it would make sense to restructur this section, i would categorize all these methods into "user gives information by hand", e.g. wikipedia and "information is automatically collected", e.g. GPS locations then use these examples to point out how that usually works.
+Additionally there seems to be a part about test cases, however i didn't really understand what the message was there..
+
+4.1
+What data is exactly collected and how?
+e.g. is data anonymized, how is it stored, does data go to nokia and is processed there or is it processed diractly on customers server?
+
+4.1.1
+Not sure how much of this is actually needed, since we are mainly interested in what methods exists, how they work and how/if they comply with GDPR - and less in for what exactly this is used.
+
+4.2
+How is this method a crowd-sourcing method? does this not only support other crowd sourcing methods?
+
+4.3
+Main message here seems to be something like: "surveys benefit from open questions" - how does this help us to state wether this method complies with GDPR or not?
+
+4.4 - 4.6
+Seems reasonable
+
+4.7
+Whats the message here?
+
+4.8
+To me this seems to be a bit of everything - whats the message here?
+
+4.9
+nice
+
