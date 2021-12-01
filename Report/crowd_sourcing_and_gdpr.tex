@@ -185,58 +185,87 @@
 	
 	\chapter{Crowd-Sourcing Methods}
 	Before concerns regarding privacy of crowd-sourcing methods can be addressed, it is imperative to list a subset of the options that are in use today.
-	
-	\section[Nokia AVA]{Nokia AVA \cite{NokiaAVACrowdAnalytics}}
+
+	\sectionmark{Nokia AVA}
+	\section{New York City}
 	\startsection
-		The company Nokia developed a series of analytical services and AI products for other communication service providers under the name Nokia AVA, which stands for Analytics, Virtualisation, and Automation. Nokia AVA aims to analyse the network and customer data of the providers for improvements in customer care and engagement, their service operations and how to further optimize the network itself.
-		To better showcase the benefits of their product, Nokia has made three case studies available on their homepage, namely for Vodafone, POST Luxembourg and China Mobile.
-		\subsection{Case Studies}
+		\subsection{Building Inspection}
 		\startsubsection
-			In the following sections different case studies of Nokia are presented and exemplified.
+			New Yorks department of buildings had too few inspectors to cover all complaints about illegal conversions of apartments in a sensible manner in the year 2011. This is a complicated situation as such conversions of living space increases the risk fire hazards among other dangers. As an answer, a team led by Michael Flowers has used predictive analytics have been used to prioritize the complaints by also incorporation the experience of senior inspectors \cite{BeyondOpenData}. \\
+			Thanks to this new prioritization, the false positives of the complaints have been drastically reduced, which increased the ration of resulting vacation orders from 13\% to 70\% \cite{PredictiveDataAnalytics}.
+			Additionally, this has positively influenced the incidents of deaths due to fire incidents as mentioned by the city \cite{BigDataBigApple} \cite{FDNY}.
+		\closesection
+		\subsection[Wiki Survey]{Wiki Survey \cite{BitbyBit}}
+		\startsubsection
+			Wiki surveys differ from normal surveys in the way that the answers do not have a finite number, but are in an open form, so that each participant can give answers outside of the expected scope. These outside answers are also exactly the reason to perform such a survey as it allows for new perspectives to be considered. For example New York City performed a wiki survey in 2010 on its sustainability plans, and the eigth of the top ten ideas where generated from the survey takers instead of being in the set of seed answers.
+		\closesection
+	\closesection
+	
+	\section{Boston}
+	\startsection
+		\subsection[Waze]{Waze \cite{InformationSuperhighway}}
+		\startsubsection
+			Waze is an application that specialises on route planning and traffic avoidance.
+	Bostons traffic management department partnered with Waze to combat the cities traffic issues. Waze delivers hereby the data of driving app users to the Boston traffic engineers which then adjust the cities traffic signals. The traffic department also sends back this updated information in addition with future planned adjustements to Waze in turn.
+		\closesection
+		\subsection[Street Bump]{Street Bump \cite{EGG17}}
+		\startsubsection
+			In the same manner as the Waze partnership, Boston used the Street Bump application for combating and mapping bumpy roads and potholes. This allowed the city to repair the worst cases of potholes and, as an unexpected side benefit, sunken manhole covers.
+		\closesection	
+		\subsection[Yelp]{Yelp \cite{YelpBoston}}
+		\startsubsection
+			A third partnership performed by Boston, was with Yelp and economists from Harvard to tackle the issue of health inspections at restaurants b using predictive algorithms and experience from health inspectors.
+			Instead of random inspections, information from recent customer reviews on Yelp and historical patterns are taken into account to better target the restaurants under suspicion of health code violations. The increase in found violations has been estimated to be around 30\%-50\% \cite{BSL16} \cite{Gla16}.
+		\closesection
+	\closesection
+	
+	\section[Amsterdam]{Amsterdam \cite{SmartCityAmsterdam}} \label{Amsterdam}
+	\startsection
+		Amsterdam was on of the first European cities to adopt the concept of smart cities launching a holistic strategy in 2009. The government realized early on that there exists 4 key groups, namely governement, businesses, universities and research institutions, and citizens, to the creation of a truly smart city. Beneficial to enabling communication, coordination, and collaboration the government of Amsterdam created a Smart City online platform which is used by an organized partnership of twelve public, private and university/research partners such creating a sort of marketplace where ideas and project initiators can be matched with potential developers and implementation partners.
+		\paragraph{Enabling Initiatives} \hfill \\
+		Several companies established a network of \href{https://www.yenlo.com/blogs/ibeacon-testing-ground-first-lora-network/}{iBeacons}, which are small devices that can connect to smartphones, wearables and other devices via Bluetooth in order to enabling apps to receive much more specific, location-based data under a collaboration named "Internet of Things Living Lab". Along 3400 meters these beacons are positioned and can communicate with other devices up to 3 kilometers away, thus being able to send data to a cloud in order to be used for smart city development.
+		\paragraph{Social Initiatives} \hfill \\
+		The smartphone application \href{http://www.urbyapp.com/}{Urby} is used such that based on location and interests of the user local events and activities are suggested hence saving time for the user which would be spent in order to find those but hence indirectly promoting the businesses hosting the events and activities.
+		\paragraph{Infrastructure Initiatives \cite{SmartCityAmsterdamYT}} \hfill \\
+		Amsterdam is setting up smart lighting areas throughout the city, so the municipality can control the intensity of the lighting posts depending on where they are located and whether the traffic volume does have a great need for it. With movement sensors it is ensured that the lights reach the maximum brightness if citizen or vehicles pass them and the minimum when ther is noone around. It is also possible for police departments and traffic offices to bring the intensity of the light post to the highest point in case of emergencies, like evacuation. To further enhance smart energy usage electric car loading stations are using so called "Smart Charging" by either delaying at what time the loading station starts to load the vehicle or reducing the output according to the current grid utilization.
+		\paragraph{Mobility Initiatives} \hfill \label{AmsterdamMobilityInitiatives} \\
+		Concerning traffic congestion Amsterdam and other cities found out that about a third of all city traffic is created by people in search of a parking spot. In pursuance to remove this third from the streets and help the drivers to find the required spot faster, sensors were embedded in parking spaces, which communicate with a cloud so end-users can track down the nearest available space via app. As statistics have shown this led to a reduction in the average time to find a parking spot of 43\%. In order to further reduce traffic the smartphone app Toogethr makes carpooling easier by matching passengers with potential drivers based on the location of their home and employment and the working hours and thus leading to a reduction in pollution and fuel usage.
+		\subsection[Schoonschip]{\href{https://schoonschipamsterdam.org/en/}{Schoonschip}}
+		\startsubsection
+			Located in the Johan van Hasseltkanaal, situated in the North of Amsterdam, Schoonschip is a ecologically and socially sustainable, floating neighborhood, housing 47 households on 30 residential units (arks). With heat pumps that extract warmth from the water in the canal (aquathermie) and solar panels on top of each house the residential area can be self sufficient in the summer. All of the individual systems of each residential unit is connected with one "My-Power-Grid" energy grid system which uses realtime data in order to decide, using additional wheather and solar information, on what to do with the enrgy, in order to optimise each house's energy production. Also it can conclude whether it is best to charge or discharge batteries or storing energy as heat in the heat pumps. Because of the need of the information of what the energy consumption in Schoonschip is at any time the data is shared for everyone to see (https://schoonschipamsterdam.org/en/).
+		\closesection
+	\closesection
+	
+	\section[Palo Alto]{Palo Alto \cite{SmartCityPaloAlto}}
+	\startsection
+		In 2014 the municipality of Palo Alto, Santa Clara County, California, ran an app creating challenge. In this participants were asked to develop apps addressing the solution of a problem or providing a service important to the community. From this challenge various apps emerged, like the AdoptMe! app which is focussing on sharing the stories and ultimately finding a home for animals that are kept in shelters or in foster care, or the Play Palo Alto app in which challenges and missions can be completed by both visitors and residents in order to earn points which can then be redeemed for coupons at local businesses and restaurants. Also a result of this competition was a guidebook co-authored by the city's CIO called "The Apps Challenge Playbook" \cite{AppsChallengePlaybook} on how to run a successful Apps Challenge so other cities can carry out these events as well. Since then Palo Alto introduced many different Smart City Initiatives in order to solve the problems of its citizen.
+		\paragraph{Infrastructure Initiatives} \hfill \\
+		Together with the local institution Stanford University the city places sensors, especially in Palo Alto's retail district, to track air quality indicators. A similar approach is made to monitor the water use which can not only suggest ideas for water-saving measures but also can work as an early warning system for leakages. Similar to Amsterdam (Section \ref{Amsterdam}) a smart lighting and electricity grid shall be installed in the near future.
+		\paragraph{Municipal Initiatives} \hfill \\
+		In order to increase the response time of government services and simplify the access to it for its citizens some fields of operation transitioned to the digital world, i.e. a chatbot on Facebook that can answer simple queries for frequently asked questions or apps for emergency situation preparations and planning tips. Additionally an app was developed with which citizens can directly report different civic grievances like littering and certain types of crimes and even follow up the city's response. Furthermore Palo Alto introduced its citizens to the \href{https://coolblock.org/}{Cool Block Project} which focuses on giving solutions in specific areas like watching water use, preparing for bad situations, and reducing the block's carbon footprint.	
+		\paragraph{Mobility Initiatives} \hfill \\
+		As seen in Amsterdam also Palo Alto (Paragraph \ref{AmsterdamMobilityInitiatives}) uses the same approach in order to oppose traffic congestion by letting the drivers know where the nearest parking spot is. Another target is the broader control of traffic flow. By connecting the traffic lights into a single, large network and using sensors so dynamic and remote signalling is made possiblethe traffic safety can be improved and the response time for emergency services can be reduced. Through collecting statistics on different traffic types and flow direction smart city planning is also enabled and new smart city mobility solutions can be created.
+	\closesection
+	
+	\section{Nokia}
+	\startsection
+		\subsection[Nokia AVA]{Nokia AVA \cite{NokiaAVACrowdAnalytics}}
+		\startsubsection
+			The company Nokia developed a series of analytical services and AI products for other communication service providers under the name Nokia AVA, which stands for Analytics, Virtualisation, and Automation. Nokia AVA aims to analyse the network and customer data of the providers for improvements in customer care and engagement, their service operations and how to further optimize the network itself.
+			To better showcase the benefits of their product, Nokia has made three case studies available on their homepage, namely for Vodafone, POST Luxembourg and China Mobile, which will be presented and exemplified in the following sections.
 			\subsubsection{Vodafone Anomaly Detection in Italy}
 				Vodafone decide to launch an anomaly detection application in Italy in partnership with Nokia for their network planning and optimisation. Vodafone has provided their own network data, while Nokia provided the applications and models for successful implementation. Vodafone noted an increase in operational efficiency of 25-30\% and plans to deploy to other countries.	
-			\subsubsection{POST Luxembourg} 
+			\subsubsection{POST Luxembourg}
 				POST Luxembourg wanted to reduce operational costs and increase customer satisfaction by diagnosing issues on the network through AI application and increasing the efficiency of their field technicians.
 			For this POST Luxembourg used Nokia's home and access insight solution, which is aimed at analysing and resolving network issues. The usage resulted in a 95\% correct or helpful diagnosis received by their field staff.
 			\subsubsection{China Mobile}
 				China Mobile was concerned with increased energy usage across their network especially due to rolling out 5G, and searched for an intelligent energy management system that does not impact customer experience.
-			A solution has been found in the form of Nokia AVA for Energy Efficiency, and resulted in a reduction of short-term energy use of 5\%, made future reduction of 20\% possible, reduced air conditioning energy usage by 74\%, generally balanced performance requirements with energy saving, and maintained the network performance successfully.
+				A solution has been found in the form of Nokia AVA for Energy Efficiency, and resulted in a reduction of short-term energy use of 5\%, made future reduction of 20\% possible, reduced air conditioning energy usage by 74\%, generally balanced performance requirements with energy saving, and maintained the network performance successfully.
+		\closesection	
+		\subsection[StarHub]{StarHub \cite{StarhubNokia}}
+		\startsubsection
+			A further partnership between Nokia and the singaporean  based communication provider StarHub has been created with the goal of 'effective advertising'. This means that marketers can for example plan their future business locations and placements of advertisements due to gained insights from consumer travel patterns. StarHub hereby plans to use Nokia AVA and other capabilities from Nokia. 
 		\closesection
-	\closesection
-
-	\sectionmark{Nokia AVA}
-	\section{New York City Building Inspection}
-	\startsection
-		New Yorks department of buildings had too few inspectors to cover all complaints about illegal conversions of apartments in a sensible manner in the year 2011. This is a complicated situation as such conversions of living space increases the risk fire hazards among other dangers. As an answer, a team led by Michael Flowers has used predictive analytics have been used to prioritize the complaints by also incorporation the experience of senior inspectors \cite{BeyondOpenData}. \\
-		Thanks to this new prioritization, the false positives of the complaints have been drastically reduced, which increased the ration of resulting vacation orders from 13\% to 70\% \cite{PredictiveDataAnalytics}.
-		Additionally, this has positively influenced the incidents of deaths due to fire incidents as mentioned by the city \cite{BigDataBigApple} \cite{FDNY}.
-	\closesection
-
-	\section[Wiki Survey in New York City]{Wiki Survey in New York City \cite{BitbyBit}}
-	\startsection
-		Wiki surveys differ from normal surveys in the way that the answers do not have a finite number, but are in an open form, so that each participant can give answers outside of the expected scope. These outside answers are also exactly the reason to perform such a survey as it allows for new perspectives to be considered. For example New York City performed a wiki survey in 2010 on its sustainability plans, and the eigth of the top ten ideas where generated from the survey takers instead of being in the set of seed answers.
-	\closesection
-
-	\section[Waze and Boston]{Waze and Boston \cite{InformationSuperhighway}}
-	\startsection
-		Waze is an application that specialises on route planning and traffic avoidance.
-	Bostons traffic management department partnered with Waze to combat the cities traffic issues. Waze delivers hereby the data of driving app users to the Boston traffic engineers which then adjust the cities traffic signals. The traffic department also sends back this updated information in addition with future planned adjustements to Waze in turn.
-	\closesection
-
-	\section[Street Bump and Boston]{Street Bump and Boston \cite{EGG17}}
-	\startsection
-		In the same manner as the Waze partnership, Boston used the Street Bump application for combating and mapping bumpy roads and potholes. This allowed the city to repair the worst cases of potholes and, as an unexpected side benefit, sunken manhole covers.
-	\closesection
-	
-	\section[Yelp and Boston]{Yelp and Boston \cite{YelpBoston}}
-	\startsection
-		A third partnership performed by Boston, was with Yelp and economists from Harvard to tackle the issue of health inspections at restaurants b using predictive algorithms and experience from health inspectors.
-		Instead of random inspections, information from recent customer reviews on Yelp and historical patterns are taken into account to better target the restaurants under suspicion of health code violations. The increase in found violations has been estimated to be around 30\%-50\% \cite{BSL16} \cite{Gla16}.
-	\closesection	
-	
-	\section[StarHub and Nokia]{StarHub and Nokia \cite{StarhubNokia}}
-	\startsection
-		A further partnership between Nokia and the singaporean  based communication provider StarHub has been created with the goal of 'effective advertising'. This means that marketers can for example plan their future business locations and placements of advertisements due to gained insights from consumer travel patterns. StarHub hereby plans to use Nokia AVA and other capabilities from Nokia. 
 	\closesection
 	
 	\section[Test Case Studies and Modeling]{Test Case Studies and Modeling \cite{CrowdSourcing}}
@@ -247,7 +276,6 @@
 
 	\section[Mobile Crowd-Sourcing]{Mobile Crowd-Sourcing \cite{MobileCrowdSourcing}}
 	\startsection
-	%[[KLJ+19] Mobile Crowdsourcing in Smart Cities: Technologies, Applications, and Future Challenges]
 		Mobile crowd-sourcing puts the various sensors and systems of mobile devices in focus. As in previous sections seen this allows for optimal data gathering in domains like monitoring of traffic for example.
 		The most common architecture of mobile crowd-sourcing is made up of three entities, namely the working crowd, service providers, and end-users. The workers perform tasks received by the service providers and return the results. Service providers receive requests from end-users and divide them into smaller subtasks for its workers to perform before sending finished tasks back to its end-users. The service providers also collects and processes data, and is also responsible for evaluating its participants if needed. The end-users can send request to the providers and also evaluate the results later.\\
 		To better decide which workers are suited for which tasks, a task recommendation and allocation system can be used that, for example, collects and analyses the participants context information, like location, usage of the platform, previous work evaluation, and other data points. Such a system can improve the efficiency of task assignment in the context of throughput and quality.
