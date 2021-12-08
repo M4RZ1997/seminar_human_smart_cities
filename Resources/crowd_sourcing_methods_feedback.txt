@@ -3,26 +3,26 @@ I think it would make sense to restructur this section, i would categorize all t
 GPS locations then use these examples to point out how that usually works.
 Additionally there seems to be a part about test cases, however i didn't really understand what the message was there..
 
-4.1 NOKIA AVA
+4.1 NOKIA AVA - Added thoughts
 What data is exactly collected and how?
 e.g. is data anonymized, how is it stored, does data go to nokia and is processed there or is it processed diractly on customers server?
 
-4.1.1 CASE STUDY 1 VODAFONE
+4.1.1 CASE STUDY 1 VODAFONE - Added thoughts
 Not sure how much of this is actually needed, since we are mainly interested in what methods exists, how they work and how/if they comply with GDPR - and less in for what exactly this is used.
 
-4.2 New York City Building Inspection
+4.2 New York City Building Inspection - Need to think about it
 How is this method a crowd-sourcing method? does this not only support other crowd sourcing methods?
 
-4.3 Wiki Survey New York City
+4.3 Wiki Survey New York City - Need to think about it
 Main message here seems to be something like: "surveys benefit from open questions" - how does this help us to state wether this method complies with GDPR or not?
 
-4.4 - 4.6 WAZE, Street Bump, Yelp
+4.4 - 4.6 WAZE, Street Bump, Yelp - OK
 Seems reasonable
 
-4.7 StarHub + Nokia
+4.7 StarHub + Nokia - Incorporated into Nokia
 Whats the message here?
 
-4.8 Test case studies and modeling
+4.8 Test case studies and modeling - Need to think about it
 To me this seems to be a bit of everything - whats the message here?
 
 4.9 Mobile Crowdsourcing - OK
