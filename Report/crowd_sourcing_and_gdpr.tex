@@ -41,9 +41,10 @@
 
 	\tableofcontents
 
-	\nocite{*}
+	%\nocite{*}
 	
 	\chapter{Introduction}
+	
 	\section{Background and Motivation}
 	\startsection
 		Wisdom of the Crowd is the idea, that large collectives are supperior to individual experts in problem-solving, decision-making, innovating, and predicting\footnote{\url{https://www.investopedia.com/terms/w/wisdom-crowds.asp}}. 
@@ -171,8 +172,6 @@
 		\item Who obtained consent
 		\item What information was provided to the person consenting
 	\end{itemize}
-
-
 	\closesection
 
 	\section{Sanctions}
@@ -185,19 +184,21 @@
 	
 	\chapter{Crowd-Sourcing Methods}
 	Before concerns regarding privacy of crowd-sourcing methods can be addressed, it is imperative to list a subset of the options that are in use today.
-
-	\sectionmark{Nokia AVA}
-	\section{New York City}
+	
+	\section[Amsterdam]{Amsterdam \cite{SmartCityAmsterdam}} \label{Amsterdam}
 	\startsection
-		\subsection{Building Inspection}
+		Amsterdam was on of the first European cities to adopt the concept of smart cities launching a holistic strategy in 2009. The government realized early on that there exists 4 key groups, namely governement, businesses, universities and research institutions, and citizens, to the creation of a truly smart city. Beneficial to enabling communication, coordination, and collaboration the government of Amsterdam created a Smart City online platform which is used by an organized partnership of twelve public, private and university/research partners such creating a sort of marketplace where ideas and project initiators can be matched with potential developers and implementation partners.
+		\paragraph{Enabling Initiatives} \hfill \\
+		Several companies established a network of \href{https://www.yenlo.com/blogs/ibeacon-testing-ground-first-lora-network/}{iBeacons}, which are small devices that can connect to smartphones, wearables and other devices via Bluetooth in order to enabling apps to receive much more specific, location-based data under a collaboration named "Internet of Things Living Lab". Along 3400 meters these beacons are positioned and can communicate with other devices up to 3 kilometers away, thus being able to send data to a cloud in order to be used for smart city development.
+		\paragraph{Social Initiatives} \hfill \\
+		The smartphone application \href{http://www.urbyapp.com/}{Urby} is used such that based on location and interests of the user local events and activities are suggested hence saving time for the user which would be spent in order to find those but hence indirectly promoting the businesses hosting the events and activities.
+		\paragraph{Infrastructure Initiatives \cite{SmartCityAmsterdamYT}} \hfill \\
+		Amsterdam is setting up smart lighting areas throughout the city, so the municipality can control the intensity of the lighting posts depending on where they are located and whether the traffic volume does have a great need for it. With movement sensors it is ensured that the lights reach the maximum brightness if citizen or vehicles pass them and the minimum when ther is noone around. It is also possible for police departments and traffic offices to bring the intensity of the light post to the highest point in case of emergencies, like evacuation. To further enhance smart energy usage electric car loading stations are using so called "Smart Charging" by either delaying at what time the loading station starts to load the vehicle or reducing the output according to the current grid utilization.
+		\paragraph{Mobility Initiatives} \hfill \label{AmsterdamMobilityInitiatives} \\
+		Concerning traffic congestion Amsterdam and other cities found out that about a third of all city traffic is created by people in search of a parking spot. In pursuance to remove this third from the streets and help the drivers to find the required spot faster, sensors were embedded in parking spaces, which communicate with a cloud so end-users can track down the nearest available space via app. As statistics have shown this led to a reduction in the average time to find a parking spot of 43\%. In order to further reduce traffic the smartphone app Toogethr makes carpooling easier by matching passengers with potential drivers based on the location of their home and employment and the working hours and thus leading to a reduction in pollution and fuel usage.
+		\subsection[Schoonschip]{\href{https://schoonschipamsterdam.org/en/}{Schoonschip}} \label{Schoonschipp}
 		\startsubsection
-			New Yorks department of buildings had too few inspectors to cover all complaints about illegal conversions of apartments in a sensible manner in the year 2011. This is a complicated situation as such conversions of living space increases the risk fire hazards among other dangers. As an answer, a team led by Michael Flowers has used predictive analytics have been used to prioritize the complaints by also incorporation the experience of senior inspectors \cite{BeyondOpenData}.\\
-			Thanks to this new prioritization, the false positives of the complaints have been drastically reduced, which increased the ration of resulting vacation orders from 13\% to 70\% \cite{PredictiveDataAnalytics}.
-			Additionally, this has positively influenced the incidents of deaths due to fire incidents as mentioned by the city \cite{BigDataBigApple} \cite{FDNY}.
-		\closesection
-		\subsection[Wiki Survey]{Wiki Survey \cite{BitbyBit}}
-		\startsubsection
-			Wiki surveys differ from normal surveys in the way that the answers do not have a finite number, but are in an open form, so that each participant can give answers outside of the expected scope. These outside answers are also exactly the reason to perform such a survey as it allows for new perspectives to be considered. For example New York City performed a wiki survey in 2010 on its sustainability plans, and eight of the top ten ideas where generated from the survey takers instead of being in the set of seed answers.
+			Located in the Johan van Hasseltkanaal, situated in the North of Amsterdam, Schoonschip is a ecologically and socially sustainable, floating neighborhood, housing 47 households on 30 residential units (arks). With heat pumps that extract warmth from the water in the canal (aquathermie) and solar panels on top of each house the residential area can be self sufficient in the summer. All of the individual systems of each residential unit is connected with one "My-Power-Grid" energy grid system which uses realtime data in order to decide, using additional wheather and solar information, on what to do with the enrgy, in order to optimise each house's energy production. Also it can conclude whether it is best to charge or discharge batteries or storing energy as heat in the heat pumps. Because of the need of the information of what the energy consumption in Schoonschip is at any time the data is shared for everyone to see (https://schoonschipamsterdam.org/en/).
 		\closesection
 	\closesection
 	
@@ -240,20 +241,17 @@
 		\closesection
 	\closesection
 	
-	\section[Amsterdam]{Amsterdam \cite{SmartCityAmsterdam}} \label{Amsterdam}
+	\section{New York City}
 	\startsection
-		Amsterdam was on of the first European cities to adopt the concept of smart cities launching a holistic strategy in 2009. The government realized early on that there exists 4 key groups, namely governement, businesses, universities and research institutions, and citizens, to the creation of a truly smart city. Beneficial to enabling communication, coordination, and collaboration the government of Amsterdam created a Smart City online platform which is used by an organized partnership of twelve public, private and university/research partners such creating a sort of marketplace where ideas and project initiators can be matched with potential developers and implementation partners.
-		\paragraph{Enabling Initiatives} \hfill \\
-		Several companies established a network of \href{https://www.yenlo.com/blogs/ibeacon-testing-ground-first-lora-network/}{iBeacons}, which are small devices that can connect to smartphones, wearables and other devices via Bluetooth in order to enabling apps to receive much more specific, location-based data under a collaboration named "Internet of Things Living Lab". Along 3400 meters these beacons are positioned and can communicate with other devices up to 3 kilometers away, thus being able to send data to a cloud in order to be used for smart city development.
-		\paragraph{Social Initiatives} \hfill \\
-		The smartphone application \href{http://www.urbyapp.com/}{Urby} is used such that based on location and interests of the user local events and activities are suggested hence saving time for the user which would be spent in order to find those but hence indirectly promoting the businesses hosting the events and activities.
-		\paragraph{Infrastructure Initiatives \cite{SmartCityAmsterdamYT}} \hfill \\
-		Amsterdam is setting up smart lighting areas throughout the city, so the municipality can control the intensity of the lighting posts depending on where they are located and whether the traffic volume does have a great need for it. With movement sensors it is ensured that the lights reach the maximum brightness if citizen or vehicles pass them and the minimum when ther is noone around. It is also possible for police departments and traffic offices to bring the intensity of the light post to the highest point in case of emergencies, like evacuation. To further enhance smart energy usage electric car loading stations are using so called "Smart Charging" by either delaying at what time the loading station starts to load the vehicle or reducing the output according to the current grid utilization.
-		\paragraph{Mobility Initiatives} \hfill \label{AmsterdamMobilityInitiatives} \\
-		Concerning traffic congestion Amsterdam and other cities found out that about a third of all city traffic is created by people in search of a parking spot. In pursuance to remove this third from the streets and help the drivers to find the required spot faster, sensors were embedded in parking spaces, which communicate with a cloud so end-users can track down the nearest available space via app. As statistics have shown this led to a reduction in the average time to find a parking spot of 43\%. In order to further reduce traffic the smartphone app Toogethr makes carpooling easier by matching passengers with potential drivers based on the location of their home and employment and the working hours and thus leading to a reduction in pollution and fuel usage.
-		\subsection[Schoonschip]{\href{https://schoonschipamsterdam.org/en/}{Schoonschip}}
+		\subsection{Building Inspection}
 		\startsubsection
-			Located in the Johan van Hasseltkanaal, situated in the North of Amsterdam, Schoonschip is a ecologically and socially sustainable, floating neighborhood, housing 47 households on 30 residential units (arks). With heat pumps that extract warmth from the water in the canal (aquathermie) and solar panels on top of each house the residential area can be self sufficient in the summer. All of the individual systems of each residential unit is connected with one "My-Power-Grid" energy grid system which uses realtime data in order to decide, using additional wheather and solar information, on what to do with the enrgy, in order to optimise each house's energy production. Also it can conclude whether it is best to charge or discharge batteries or storing energy as heat in the heat pumps. Because of the need of the information of what the energy consumption in Schoonschip is at any time the data is shared for everyone to see (https://schoonschipamsterdam.org/en/).
+			New Yorks department of buildings had too few inspectors to cover all complaints about illegal conversions of apartments in a sensible manner in the year 2011. This is a complicated situation as such conversions of living space increases the risk fire hazards among other dangers. As an answer, a team led by Michael Flowers has used predictive analytics have been used to prioritize the complaints by also incorporation the experience of senior inspectors \cite{BeyondOpenData}.\\
+			Thanks to this new prioritization, the false positives of the complaints have been drastically reduced, which increased the ration of resulting vacation orders from 13\% to 70\% \cite{PredictiveDataAnalytics}.
+			Additionally, this has positively influenced the incidents of deaths due to fire incidents as mentioned by the city \cite{BigDataBigApple} \cite{FDNY}.
+		\closesection
+		\subsection[Wiki Survey]{Wiki Survey \cite{BitbyBit}}
+		\startsubsection
+			Wiki surveys differ from normal surveys in the way that the answers do not have a finite number, but are in an open form, so that each participant can give answers outside of the expected scope. These outside answers are also exactly the reason to perform such a survey as it allows for new perspectives to be considered. For example New York City performed a wiki survey in 2010 on its sustainability plans, and eight of the top ten ideas where generated from the survey takers instead of being in the set of seed answers.
 		\closesection
 	\closesection
 	
@@ -287,13 +285,13 @@
 		\startsubsection
 			A further partnership between Nokia and the singaporean  based communication provider StarHub has been created with the goal of 'effective advertising'. This means that marketers can for example plan their future business locations and placements of advertisements due to gained insights from consumer travel patterns. StarHub hereby plans to use Nokia AVA and other capabilities from Nokia. 
 		\closesection
-		\subsection{General assumptions about data and privacy}
+		\subsection{General Assumptions about Data and Privacy}
 		\startsubsection
 		Nokia and its partners have not revealed how exactly privacy is handled in their projects, in addition to how data is analysed, processed or transformed. Assumptions can be made that GPS coordinates of users are involved in some form for the effective advertisement and the project in China, at the very least. It would be reasonable to assume that all partners of Nokia have some measurements in place to protect their users privacy in addition to protocols for handling successful attacks, because, as communication providers, they remain a lucrative target for malicious entities.
-		\closesection
-		
+		\closesection		
 	\closesection
 	
+	\sectionmark{Nokia AVA}	
 	\section[Test Case Studies and Modeling]{Test Case Studies and Modeling \cite{CrowdSourcing}}
 	\startsection
 		Test case studies have been performed with current examples of crowd-sourcing like Street Bump to show how certain sectors can profit from crowd-sourcing methods. For example in the dimension of transportation, it would be possible to dynamically allocate parking spaces with crowd-sourcing or similar to previous examples the app CycleAtlanta that records bycicle trips and sends the data to the city planners of Atlanta. In the sector of education, sites like Khan Academy or Un-Academy allow for educators to teach to groups of all ages. Other education based sites that use crowd-sourced of users are for example sites like Wikipedia, Quora or StackExchange. In the sector of healthcare, there exist websites where users can share their patient experiences and receive information about sickness and diseases.
@@ -307,26 +305,48 @@
 		To better decide which workers are suited for which tasks, a task recommendation and allocation system can be used that, for example, collects and analyses the participants context information, like location, usage of the platform, previous work evaluation, and other data points. Such a system can improve the efficiency of task assignment in the context of throughput and quality.
 	% There is more information about MCS, should this also be added?
 	% The paper also states some possible further applications of MCS
-		\subsection{Privacy control, privacy concerns, and privacy threats of Mobile Crowd-Sourcing}
+		\subsection{Privacy control, Concerns, and Threats of Mobile Crowd-Sourcing} \label{PrivacyMCS}
 		\startsubsection
 			Privacy concerns arise due to the need of environmental data of the participants for the task recommendation system. If the system does not have any safety measures an attack can breach the privacy of the platform. \\
 			The human involvement, task crowd-sourcing itself, and the dynamic topology can make privacy protection difficult.
 			For example the sensing worker can collect and send data pertaining to his location, which can reveal his movement, or could also contain identifying or private information that could be collected by malicious entities. Additionally on part of the service provider, the difficulty for privacy security increases especially if the outsourced tasks contain sensitive information to complete the task. Another challenge for privacy protection can be the changing topology of the network, due to joining, leaving and movement of workers, and weaken the possible protection against outside attackers \cite{SecPriMobCSM}.\\
-			Furthermore there exist privacy threats that can be identified as privacy threats from data and privacy threats from tasks itself. As mentioned before, the privacy of the sensed data consists of the danger that collected data contains identifying information, or more general information that can leak privacy, be it environmental, locational, routine, and so on. Similarly, the privacy of computing inputs considers the sensitive data that is enclosed in the tasks itself, which may leak the data of contributors/workers, data owners and other related people. This encapsulated data could consist for example as personal health information, business reports, among other information. Finally the privacy of computing results can occur if the task results itself contain sensitive information that should not leak to the worker or the service provider, and only remain in the hands of the end-user. Evidently, setting up systems that accomplish such conditions can be difficult.\\
+			Furthermore there exists privacy threats that can be identified as privacy threats from data and privacy threats from tasks itself. As mentioned before, the privacy of the sensed data consists of the danger that collected data contains identifying information, or more general information that can leak privacy, be it environmental, locational, routine, and so on. Similarly, the privacy of computing inputs considers the sensitive data that is enclosed in the tasks itself, which may leak the data of contributors/workers, data owners and other related people. This encapsulated data could consist for example as personal health information, business reports, among other information. Finally the privacy of computing results can occur if the task results itself contain sensitive information that should not leak to the worker or the service provider, and only remain in the hands of the end-user. Evidently, setting up systems that accomplish such conditions can be difficult.\\
 			Further threats to privacy could be identified originating from the tasks, in the form of task privacy of end users, and task privacy of participants. Focused on the end user privacy, it can occur that the content of the stated tasks can reveal information of the end user to the service provider, for example if the task pertains to traffic information on the street, it could be inferred that the end user is in possession of a car. For the privacy of the participants it is important that the tasks itself do not leak information about the participants/workers. Again the example of worker location tracking can be mentioned.\\
-			Additional privacy concerns have been identified in 'Towards A Framework for Privacy-Aware Mobile Crowdsourcing'. The concern of disclosed user identity states that many mobile crowdsourcing systems collect profile informations of their participants/workers, like name, password, email address and so on. If this data could be breached and retrieved by attackers, then it could have far reaching consequences to the participant. Again mentioned has been the disclosure of user location and activities, just as in the previous paragraph, but with the added idea that the worker/participant may be aware that his activity and location may be monitored but not to which degree, due to ignorance. A second thought goes to the requirement for users that want to share data about general locations and activity but not for sensitive places. The lack of user privacy awareness, as mentioned before, is the idea that the user does not have the knowledge of how the data will be used and in how much privacy risk he is, and therefore has no choice but to trust the application \cite{PrivacyAwareMCS}.\\
+			Additional privacy concerns have been identified in \cite{PrivacyAwareMCS}. The concern of disclosed user identity states that many mobile crowdsourcing systems collect profile informations of their participants/workers, like name, password, email address and so on. If this data could be breached and retrieved by attackers, then it could have far reaching consequences to the participant. Again mentioned has been the disclosure of user location and activities, just as in the previous paragraph, but with the added idea that the worker/participant may be aware that his activity and location may be monitored but not to which degree, due to ignorance. A second thought goes to the requirement for users that want to share data about general locations and activity but not for sensitive places. The lack of user privacy awareness, as mentioned before, is the idea that the user does not have the knowledge of how the data will be used and in how much privacy risk he is, and therefore has no choice but to trust the application.\\
 			Indeed the inability to know or deduce the usage of the gathered data for the common man itself brings further vulnerability. It could occur that the gathered data itself is relatively privately secure but if businesses combine this data with further information gathered from other sources could lead to insights about private information of the users. Lastly, one must consider the usage of mobile devices itself due to increased vulnerability to attacks and security breaches. Mobile devices mostly have limited computational resources to incorporate certain cryptographic protections.\\
 			The publication "A Survey on Security, Privacy and Trust in Mobile Crowdsourcing" explores various schemes for mobile crowd-sourcing networks. The evaluation is based upon the fulfillment of requirements in regard to trust, privacy and security of the schemes. Especially for guaranteeing privacy, differentially privatize the sensed data and addition of noise, homomorphic encryption for the personal information, or grouping areas of workers together for further generalization, or data aggregation have been proposed in some schemes for example. Nonetheless, it is difficult to develop a scheme for mobile crowdsourcing that fulfils all three requirements for trust, security and privacy \cite{SecPriTrustMCS}.
 		\closesection
 	\closesection
 
 
-	\chapter{Considerations in Designing Crowd-Sourcing Methods}
+	%\chapter{Considerations in Designing Crowd-Sourcing Methods}
+	\chapter{Conclusion}
+	In the following chapter design principles and guidelines are presented and the currently used crowd-sourcing methods are evaluated and possible improvements are introduced.
+	
+	\section{Guidelines and Design Principles}
 	\startsection
+		The gathering of GPS data in realtime can be critical as already stated in the subsection \ref{PrivacyMCS}. If the realtime aspect of the gathering is not of much use, the approach of Apple presented in their paper "Learning with Privacy at Scale" \cite{PrivacyApple} can be used with which the data is sent independent from when the data was generated. The data is stored on the device which created it and at an arbitrary point in time it is actually sent to the provider of the application or service that wants to use this data, therefore detaching the realtime aspect and make it somewhat impossible to trace back the point in time of when the data was produced. \\
+		For services and application where realtime is also a relevant information to be processed for example the energy and water consumption in smart homes, for example in the Schoonschipp project in Amsterdam (subsection \ref{Schoonschipp}), whose smart grid system relies on that data, the General Data Protection Regulation can be a really hard governance, because the inhabitants are "transparent human beings" as the data from the homes is publicly known. Therefore the consent part of GDPR is significant such that the inhabitant are well informed and authorize the service provider to use that data, hence making GDPR somewhat redundant and unnecessary.
 	\closesection
 	
-	\chapter{Conclusion}
+	\noindent The idea of GDPR is to give users back the power over their own information and data and decide when it is used. Because of the consent paragraph in GDPR the therin mentioned rights can be overwritten or completely nullified. Another idea emerged in 2018 in the paper "A Blueprint for a Better Digital Society" by Jaron Lanier and E. Glen Weyl of "Data Dignity":
+	
+	\section[Data Dignity]{Data Dignity \cite{LanierWeylBlueprint}}
 	\startsection
+		In todays' world few gigantic tech firms like Alphabet or Facebook have become so powerful that they are able to use their platforms like YouTube what content will be consumed or who does get paid for the generation of the media/data. Lanier and Weyl compare this to communism in which a central planner makes analogous decisions. An idea to oppose this scheme is to create a business model in which data creators will directly trade their generated data to tech firms and other services that want to use this data for training machine learning algorithms or to draw conclusions for new advertisement campaigns, the so called "Data Dignity". \\
+		The idea behind "Data Dignity" is to create a coherent marketplace for people's data in which people are getting paid for the data they generate and have to pay if they want to use services that need this data. A benefit of this is that platforms will receive higher-quality data and therefore being able to create higher-quality services with which a greater revenue can be achieved. \\
+		In order to enforce data dignity Lanier and Weyl suggest the use of "Mediators of Individual Data", so called MIDs, because tech firms or individuals alone would not be able to make this kind of change as for tech giants too many conflicts of interests do exists and the complexity of the digital economy does not allow the in detail regulation. These MIDs are intermediary groups which will negotiate with service providers that need data about the value of data and the wages and data royalties of them and will perform payment duties, so the individual that generated the data gets paid acoordingly. They are representatives of a group of people, like corporations or labor and consumer unions, which will promote its own standards and qualities. MIDs can be really different from another based on the members that they represent or which interests are of the most value for them. It is also possible that for some of the MIDs not everyone is allowed to or it is really hard to join them, based on the data they are handling. However, all of the MIDs should in some way implement the following eight principles:
+		\begin{enumerate}[(i)]
+			\item Fiduciary Duty
+			\item Quality Standards
+			\item Inalienable Provenance
+			\item Benefit Sharing
+			\item Competence and Professionalism
+			\item Biological Realism
+			\item Cognitive Realism
+			\item Longevity
+		\end{enumerate}
+		This idea is much more systemic and future oriented than the introduction of privacy regulations in respect to not being able to prevent even more innovative privacy regulations by directly involving individuals in this topic so they realize the benefits of reasonable limitations on what efforts are demanded of them, fair compensation for what information they reveal about themselves among other abilities. Weyl and Lanier abstractly call this "the right to be left alone".
 	\closesection
 	
 	\newpage
