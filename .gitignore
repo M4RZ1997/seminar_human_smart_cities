@@ -29,3 +29,4 @@ Others
 *.docx
 _minted*
 *.pptx
+*.synctex(busy)

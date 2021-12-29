@@ -1,7 +1,7 @@
 \documentclass[a4paper,12pt]{report}
 \usepackage{unifrsr}
 \usepackage{hsc_texstyle}
-\usepackage{hyperref}
+\usepackage{hyperref, nameref}
 \usepackage[style=alphabetic, backend=bibtex]{biblatex}
 \addbibresource{references.bib}
 
@@ -56,22 +56,32 @@
 	\section{Research Questions}
 	\startsection
 		This work tries to investigate how GDPR influences crowd-sourcing approaches in the context of Human Smart Cities.
-		Therefor first a literature review on existing crowd-sourcing methods is given:\\\\
-		\textbf{RQ1: What methods do exist in order to gather information from citizen?}\label{RQ1}\\\\
-		Then we investigate how these methods do (not) comply with GDPR and derive aspects to be considered when designing crowd-sourcing methods:\\\\
-		\textbf{RQ2: What aspects do Human Smart Cities need to consider in order to comply with GDPR?}\label{RQ2}\\\\
+		Therefor first a literature review on existing crowd-sourcing methods is given:
+		\paragraph{\textbf{RQ1}}\label{para:RQ1}\textbf{What methods do exist in order to gather information from citizen?} \\ \\
+		Then we investigate how these methods do (not) comply with GDPR and derive aspects to be considered when designing crowd-sourcing methods:
+		\paragraph{\textbf{RQ2}}\label{para:RQ2}\textbf{What aspects do Human Smart Cities need to consider in order to comply with GDPR?}
 	\closesection
 	
 	
-	\chapter{Methodology}
+	\chapter{Procedure}
+	
+	\section{Methodology}
 	\startsection
-		This work was created, following the Design Science Research principles\footnote{\url{https://www.researchgate.net/publication/201169029_A_Design_Science_Research_Methodology_for_Information_Systems_Research} (Is this the correct paper?)}.
-		Therefore we first review the General Data Protection Regulation and summarized our findings in Chapter \ref{GDPR}.
-		Next, we perform a literature review of a sample-set of contemporary crowd-sourcing methods and present them in Chapter \ref{Crowd-Sourcing Methods}.
-		Said chapter answers our first research question \ref{RQ1} %@Marcel, how do i link to the exact question, not the section? This should show the label RQ1 or similar.
-		Then we investigate if and how the presented crowd-sourcing methods comply with the GDPR and design the Design Science Research Artifact: A set of design principles and guidelines for designing crowd-sourcing methods in Chapter \ref{Results}. %@Marcel describe here exactly what you did.
-		Finally, we perfom a descriptive artifact evaluation, to validate our design principles and guidelines in the same Chapter.
-		This answers our second research question \ref{RQ2} %@Marcel, how do i link to the exact question, not the section? This should show the label RQ2 or similar.
+		This work was created, following the Design Science Research principles \footnote{\url{https://www.researchgate.net/publication/201169029_A_Design_Science_Research_Methodology_for_Information_Systems_Research} (Is this the correct paper?)}.
+		Therefor we first review the General Data Protection Regulation and summarized our findings in Chapter \ref{GDPR}.
+		Next, we perform a literature review of a sample-set of contemporary crowd-sourcing method and present them in Chapter \ref{Crowd-Sourcing Methods}.
+		Said chapter answers our first research question \nameref{para:RQ1}.
+		Then we investigate if and how the presented crowd-sourcing methods comply with the GDPR and design the Design Science Research Artifact: A set of design principles and guidlines for designing crowd-sourcing methods in Chapter \ref{Results}. Furthermore some examples on how to implement certain crowd-sourcing methods to be GDPR-conform are introduced and there critical points are highlighted. In the end another approach for dividing the power over data is brought in.
+		Finally we perfom a descriptive artifact evaluation, to validate our design principles and guidlines in the same Chapter.
+		This answers our second research question \nameref{para:RQ2}.
+	\closesection
+	
+	\section{Limitations}
+	\startsection
+		This work has two main limitations:
+		Firstly, this is not a topic with a clear right or wrong, thus depending on personal opinions and views, one might get to slightly different conclusions and argumentations.
+		Secondly, this work only considers the GDPR, but no other laws and regulations.
+		However there might well be other legal documents that have influence on the presented crowd-sourcing methods, which is therefore not discussed in this paper.
 	\closesection
 
 
@@ -201,7 +211,7 @@
 		\paragraph{Social Initiatives} \hfill \\
 		The smartphone application \href{http://www.urbyapp.com/}{Urby} is used such that based on location and interests of the user local events and activities are suggested hence saving time for the user which would be spent in order to find those but hence indirectly promoting the businesses hosting the events and activities.
 		\paragraph{Infrastructure Initiatives \cite{SmartCityAmsterdamYT}} \hfill \\
-		Amsterdam is setting up smart lighting areas throughout the city, so the municipality can control the intensity of the lighting posts depending on where they are located and whether the traffic volume does have a great need for it. With movement sensors, it is ensured that the lights reach the maximum brightness if citizens or vehicles pass them and the minimum when there is no one around. It is also possible for police departments and traffic offices to bring the intensity of the light post to the highest point in case of emergencies, like evacuation. To further enhance smart energy usage electric car loading stations are using so-called "Smart Charging" by either delaying at what time the loading station starts to load the vehicle or reducing the output according to the current grid utilization.
+		Amsterdam is setting up smart lighting areas throughout the city, so the municipality can control the intensity of the lighting posts depending on where they are located and whether the traffic volume does have a great need for it. With movement sensors, it is ensured that the lights reach the maximum brightness if citizens or vehicles pass them and the minimum when there is noone around. It is also possible for police departments and traffic offices to bring the intensity of the light post to the highest point in case of emergencies, like evacuation. To further enhance smart energy usage electric car loading stations are using so-called "Smart Charging" by either delaying at what time the loading station starts to load the vehicle or reducing the output according to the current grid utilization.
 		\paragraph{Mobility Initiatives} \hfill \label{AmsterdamMobilityInitiatives} \\
 		Concerning traffic congestion Amsterdam and other cities found out that about a third of all city traffic is created by people in search of a parking spot. In pursuance to remove this third from the streets and help the drivers to find the required spot faster, sensors were embedded in parking spaces, which communicate with a cloud so end-users can track down the nearest available space via app. As statistics have shown this led to a reduction in the average time to find a parking spot of 43\%. In order to further reduce traffic the smartphone app Toogethr makes carpooling easier by matching passengers with potential drivers based on the location of their home and employment and the working hours and thus leading to a reduction in pollution and fuel usage.
 		\subsection[Schoonschip]{\href{https://schoonschipamsterdam.org/en/}{Schoonschip}} \label{Schoonschipp}
@@ -335,25 +345,25 @@
 	\startsection
 		Generally, today's crowd-sourcing methods are GDPR-conform and can still be carried out as before. \\
 		However, there are some critical and tricky points that need to be considered when a government or service provider wants to use a certain crowd-sourcing method. \\
-		First of all, it must be ensured the "Right to Restriction" and the "Right to Object" must be respected, as there must be an option to prevent the data processing of a certain individual. For example due to the high-quality cameras that are available for tracking purposes, such as traffic flow surveillance, public spaces which are not part of the actual video scanning can be intruded and people which are staying in these spaces can be recognized due to the progress in facial recognition algorithms. \\
+		First of all, it must be ensured that the "Right to Restriction" and the "Right to Object" are respected, as there must be an option to prevent the data processing of a certain individual. For example due to the high-quality cameras that are available for tracking purposes, such as traffic flow surveillance, public spaces which are not part of the actual video scanning can be intruded and people which are staying in these spaces can be recognized due to the progress in facial recognition algorithms. \\
 		Other precarious rights are the "Right to Access" and the "Right to Data Portability" such that apps, which were not developed by the government but by individuals, do not grant easy access to the data which were gathered and therefore are not in compliance with GDPR. Additionally, such cases can be very difficult to enforce if the service provider's location is either outside of the European Union or can not be clearly identified. \\
-		For most of the crowd-sourcing methods the "Right to Erasure" can be neglected, because most of these are used to achieve a goal of "public interest" therefore nullifying the associated paragraph.
+		For most of the crowd-sourcing methods the "Right to Erasure" can be neglected, because most of these are used to achieve a goal of public interest therefore nullifying the associated paragraph.
 	\closesection
 	
 	\section{Guidelines and Design Principles}
 	\startsection
-		The very first thing to mention is that GDPR is only considering personal data, hence anonymized data is out of scope regarding the regulations. Therefore, when using data in use-cases where it does not matter who this data belongs to, it should be anonymized in order to rule out possible conflicts with GDPR. \\
-		A very important point when developing crowd-sourcing methods is the handling of consent. It must be given before gathering any data of the data subject, which also must be fully informed of what data is collected and for what purposes. It is not allowed to inline the consent giving in the terms of condition but it must be a separate paragraph which can be individually approven or neglected. The choice must not have any negative consequences as loss of services for instance. If the consent consists of several parts, like the data that is collected, it should be made adjustable such that a full control of what is congregated is given to the user. If a user does revoke his/her given consent the data collection must stop immediately, the already gathered data must be deleted and processing it is prohibited. However already processed data can still be used for information seeking. \\
+		GDPR is a regulation for processing of personal data. Since anonymized data does not contain personal information, it is not personal data. Therefore, when using data in use-cases where it does not matter who this data belongs to, it should be anonymized in order to rule out possible conflicts with GDPR. \\
+		An important consideration when developing crowd-sourcing methods is the handling of consent. It must be given before gathering any data of the data subject, which also must be fully informed of what data is collected and for what purposes. It is not allowed to inline the consent giving in some other legal document, e.g. the terms and conditions but it must be a separate paragraph which can be individually approven or neglected. The choice must not have any negative consequences as loss of services for instance. If the consent consists of several parts, like the data that is collected, it should be made adjustable such that a full control of what is congregated is given to the user. If a user does revoke his/her given consent the data collection must stop immediately, the already gathered data must be deleted and processing it is prohibited. However already processed data can still be used for information seeking. \\
 		In order to directly comply with the rights of a data subject stated in GDPR the following guidelines must be considered:
 		\begin{enumerate}[(a)]
 			\item All data that is gathered and processed must be accessible by the user and can be handed out when requested.
-			\item Restriction and Objection of data processing must be made possible.
+			\item Restriction and Objection of data processing must be possible.
 			\item If the crowd-sourcing method is not used to achieve a goal of public interest the data must be deleted on request and its processing must be prohibited.
 		\end{enumerate}
-		Following are some design principles and solutions for certain conflicts that were stated before: \\	
+		Following are some design principles and solutions for well defined conflicts that were stated before: \\	
 		As mentioned in section \ref{juxtaposition} when using cameras in order to surveil certain places, like traffic flow observations, public spaces should be intruded as little as possible by either replacing or reinstalling the camera or by using a blur zone filter, as described in the paper "GDPR Compliance in Video Surveillance and Video Processing Application" \cite{GDPRandSurveillanceCameras}, in order to make some parts of the field of view unidentifiable. \\
-		The gathering of GPS data in realtime can be critical as already stated in the subsection \ref{PrivacyMCS}. If the realtime aspect of the gathering is not of much use, the approach of Apple presented in their paper "Learning with Privacy at Scale" \cite{PrivacyApple} can be used with which the data is sent independent from the timeframe the data was generated. The data is stored on the device which created it and at an arbitrary point in time it is actually sent to the provider of the application or service that wants to use this data, therefore detaching the realtime aspect and make it somewhat impossible to trace back the point in time of when the data was produced. \\
-		For services and application where realtime is also a relevant information to be processed as the energy and water consumption in smart homes, for example in the Schoonschipp project in Amsterdam (subsection \ref{Schoonschipp}), whose smart grid system relies on that data, the General Data Protection Regulation can be a really hard to implement directive, because the inhabitants are "transparent human beings" as the data from the homes is publicly known. Therefore the consent part of GDPR is significant such that the inhabitant are well informed and authorize the service provider to use that data, hence making GDPR somewhat redundant and unnecessary in such cases.
+		The gathering of GPS data in realtime can be critical as already stated in the subsection \ref{PrivacyMCS}. If the realtime aspect of the gathering is not required, the approach of Apple presented in their paper "Learning with Privacy at Scale" \cite{PrivacyApple} can be used with which the data is sent independent from the timeframe the data was generated. The data is stored on the device which created it and at an arbitrary point in time it is actually sent to the provider of the application or service that wants to use this data, therefore detaching the realtime aspect and make it impossible to trace back the point in time of when the data was produced. \\
+		For services and application where realtime is relevant, as the energy and water consumption in smart homes, for example in the Schoonschipp project in Amsterdam (subsection \ref{Schoonschipp}), whose smart grid system relies on that data, the General Data Protection Regulation can be a really hard to implement directive, because the inhabitants are "transparent human beings" as the data from the homes is publicly known. Therefore the consent part of GDPR is significant such that the inhabitant are well informed and authorize the service provider to use that data, hence making some rights of GDPR redundant nd unnecessary, because within the consent some directives can be overwritten. For example the "Right to Restriction" is nullified in the Schoonschipp project because the data is collected and processed under all circumstances.
 	\closesection
 	
 	\hfill \\
@@ -385,15 +395,9 @@
 		This idea is much more systemic and future oriented than the introduction of privacy regulations in respect to not being able to prevent even more innovative privacy regulations by directly involving individuals in this topic so they realize the benefits of reasonable limitations on what efforts are demanded of them, fair compensation for what information they reveal about themselves among other abilities. Weyl and Lanier abstractly call this "the right to be left alone".
 	\closesection
 	
-	\chapter{Limitations}
-	\startsection
-		This work has two major limitations:
-		Firstly, this is not a topic with a clear right or wrong, thus depending on personal opinions and views, one might get to slightly different conclusions and argumentations.
-		Secondly, this work only considers the GDPR, but no other laws and regulations.
-		However, there might well be other legal documents that influence the presented crowd-sourcing methods, which is therefore not discussed in this paper.
-	\closesection
 	
 	\chapter{Conclusion}
+	
 	
 	\newpage
 	\addcontentsline{toc}{chapter}{Bibliography}
