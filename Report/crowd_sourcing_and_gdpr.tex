@@ -25,18 +25,10 @@
 	\maketitle
 
 	\begin{abstract}
-		This package, \textsf{unifrsr}, allows the easy creation of seminar
-		reports using standard \LaTeX. It should be the last
-		package loaded, to ensure that nothing overrides the page layout.
+		The General Data Protection Regulation, established by the European Union in 2018, is an act, which applies to the processing of personal data. Since the law came into force, some also pretty hefty fines have already been pronounced. Therefore it is crucial that also governments and crowd-sourcing initiatives are in line with GDPR and respect the enforced regulations. \\
+		In this paper we will introduce the different aspects of GDPR in egards to the processing of personal data and list prevalent crowd-sourcing methods. These methods are then reviewed for GDPR compliance and possible improvements are demonstrated. We present guidelines and design principles which should be considered when developing a new crowd-sourcing method in order to be GDPR-conform and to avoid legal repercussions. As anonymized data is not covered by GDPR we will neglect this way of collecting data for this paper. In the end a contradictary idea by Lanier and Weyl called "Data Dignity" is introduced and discussed.
 
-		Note that utility commands are available: 
-		\begin{itemize}
-			\item \verb+\seminartitle+ which specifies, optionally, the title of the seminar the report is being written for
-			\item \verb+\supervisor+ which specifies the name of the professor supervisor of the project
-			\item \verb+\assistant+ which specifies, optionally, the name of the assistants of the seminar, separated by the command \verb+\and+
-		\end{itemize}
-
-		\keywords{Seminar report, Human-IST Research Institute}
+		\keywords{Seminar report, Human-IST Research Institute, GDPR, Crowd-Sourcing, Privacy}
 	\end{abstract}
 
 	\tableofcontents
@@ -68,11 +60,11 @@
 	\section{Methodology}
 	\startsection
 		This work was created, following the Design Science Research principles \footnote{\url{https://www.researchgate.net/publication/201169029_A_Design_Science_Research_Methodology_for_Information_Systems_Research} (Is this the correct paper?)}.
-		Therefor we first review the General Data Protection Regulation and summarized our findings in Chapter \ref{GDPR}.
+		Therefore we first review the General Data Protection Regulation and summarized our findings in Chapter \ref{GDPR}.
 		Next, we perform a literature review of a sample-set of contemporary crowd-sourcing method and present them in Chapter \ref{Crowd-Sourcing Methods}.
-		Said chapter answers our first research question \nameref{para:RQ1}.
-		Then we investigate if and how the presented crowd-sourcing methods comply with the GDPR and design the Design Science Research Artifact: A set of design principles and guidlines for designing crowd-sourcing methods in Chapter \ref{Results}. Furthermore some examples on how to implement certain crowd-sourcing methods to be GDPR-conform are introduced and there critical points are highlighted. In the end another approach for dividing the power over data is brought in.
-		Finally we perfom a descriptive artifact evaluation, to validate our design principles and guidlines in the same Chapter.
+		Said chapter answers our first research question \nameref{para:RQ1}. \\
+		Then we investigate if and how the presented crowd-sourcing methods comply with the GDPR and design the Design Science Research Artifact: A set of design principles and guidelines for designing crowd-sourcing methods in Chapter \ref{Results}. Furthermore some examples on how to implement certain crowd-sourcing methods to be GDPR-conform are introduced and there critical points are highlighted. In the end another approach for dividing the power over data is brought in.
+		Finally we perfom a descriptive artifact evaluation, to validate our design principles and guidelines in the same chapter.
 		This answers our second research question \nameref{para:RQ2}.
 	\closesection
 	
@@ -301,7 +293,7 @@
 		\closesection	
 		\subsection[StarHub]{StarHub \cite{StarhubNokia}}
 		\startsubsection
-			A further partnership between Nokia and the singaporean  based communication provider StarHub has been created with the goal of 'effective advertising'. This means that marketers can for example plan their future business locations and placements of advertisements due to gained insights from consumer travel patterns. StarHub hereby plans to use Nokia AVA and other capabilities from Nokia. 
+			A further partnership between Nokia and the Singaporean based communication provider StarHub has been created with the goal of 'effective advertising'. This means that marketers can for example plan their future business locations and placements of advertisements due to gained insights from consumer travel patterns. StarHub hereby plans to use Nokia AVA and other capabilities from Nokia. 
 		\closesection
 		\subsection{General Assumptions about Data and Privacy}
 		\startsubsection
@@ -394,9 +386,6 @@
 		\end{enumerate}
 		This idea is much more systemic and future-oriented than the introduction of privacy regulations in respect to not being able to prevent even more innovative privacy regulations by directly involving individuals in this topic so they realize the benefits of reasonable limitations on what efforts are demanded of them, fair compensation for what information they reveal about themselves among other abilities. Weyl and Lanier abstractly call this "the right to be left alone".
 	\closesection
-	
-	
-	\chapter{Conclusion}
 	
 	
 	\newpage
