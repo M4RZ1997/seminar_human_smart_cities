@@ -1,7 +1,7 @@
 \documentclass[a4paper,12pt]{report}
 \usepackage{unifrsr}
 \usepackage{hsc_texstyle}
-\usepackage{hyperref, nameref}
+\usepackage{hyperref, nameref, setspace}
 \usepackage[style=alphabetic, backend=bibtex]{biblatex}
 \addbibresource{references.bib}
 
@@ -37,11 +37,12 @@
 		\keywords{Seminar report, Human-IST Research Institute, GDPR, Crowd-Sourcing, Privacy}
 	\end{abstract}
 
-	\tableofcontents
+	{\setstretch{0.9}\tableofcontents}
+	%\tableofcontents
 	
 	\chapter{Introduction}
-	Wisdom of the Crowd is the idea, that large collectives are supperior to individual experts in problem-solving, decision-making, innovating, and predicting\footnote{\url{https://www.investopedia.com/terms/w/wisdom-crowds.asp}}. 
-	Human Smart Cities have an enormous interest in extracting the Wisdom of the Crowd as a foundation for better decision making.
+	Wisdom of the Crowds is the idea, that large collectives are supperior to individual experts in problem-solving, decision-making, innovating, and predicting\footnote{\url{https://www.investopedia.com/terms/w/wisdom-crowds.asp}}. 
+	Human Smart Cities have an enormous interest in extracting the Wisdom of the Crowds as a foundation for better decision making.
 	One suitable and broadly applied approach is crowd sourcing.
 	Since data protection regulations are in effect across the world, crowd sourcing comes at a risk: If one does not comply with the relevant regulations, sanctions might be applied.
 	This conflict is particularly topical, since the General Data Protection Regulation came into effect across the European Union in 2018.
@@ -179,7 +180,7 @@
 	This implies that consent can not be bundled with acceptance of other terms and conditions, 
 	it can not be tied to the provision of a contract or service, if the processing is not strictly neccessary for the perfomance of such a contract or service and
 	data subject should be able to selectively consent to separate processing activities - i.e. a data subject should be able to consent to processing of performance data but reject processing of marketing data.\\
-	Due to the above regulations, the contollers must manage to demonstrate the data subject's consent and ensure potential withdrawal.
+	Due to the above regulations, the controllers must manage to demonstrate the data subject's consent and ensure potential withdrawal.
 	Therefore controllers should keep clear records of what a person has consented to, when and how the consent was obtained in order to be able to give evidence of consent if challenged. 
 	In particular, controllers should store:
 	\begin{itemize}
@@ -410,31 +411,29 @@
 			For example the sensing worker can collect and send data pertaining to his location, which can reveal his movement, or could also contain identifying or private information that could be collected by malicious entities. 
 			Additionally on part of the service provider, the difficulty for privacy security increases especially if the outsourced tasks contain sensitive information to complete the task. 
 			Another challenge for privacy protection can be the changing topology of the network, due to joining, leaving and movement of workers, and weaken the possible protection against outside attackers \cite{SecPriMobCSM}.\\
-			Furthermore there exists privacy threats that can be identified as privacy threats from data and privacy threats from tasks itself. 
-			As mentioned before, the privacy of the sensed data consists of the danger that collected data contains identifying information, or more general information that can leak privacy, be it environmental, locational, routine or something else. 
+			Furthermore privacy threats can be divided into ones from data and from tasks. 
+			Privacy of sensed data consists of the danger in which the collected data does contain identifying information, or more general information that can leak privacy, be it environmental, locational, routine or something else. 
 			Similarly, the privacy of computing inputs considers the sensitive data that is enclosed in the tasks itself, which may leak the data of contributors/workers, data owners and other related people. 
 			This encapsulated data could for example consist of personal health information or business reports. 
-			Finally a privacy violation can occur while computing results, if the task results contain sensitive information that should not leak to the worker or the service provider. 
+			Finally a privacy violation can occur while computing results, if the task results contain sensitive information that should not be leaked to the worker or the service provider. 
 			Evidently, setting up systems that accomplish such conditions can be difficult.\\
 			Further threats to privacy could be identified originating from the tasks, in the form of task privacy of end users, and task privacy of participants. 
-			Focused on the end user privacy, it can occur that the content of the stated tasks can reveal information of the end user to the service provider, for example if the task pertains to traffic information on the street, it could be inferred that the end user is in possession of a car. 
-			For the privacy of the participants it is important that the tasks itself must not leak information about the workers. 
-			Again the example of worker location tracking can be mentioned.\\
+			Focusing on the end user privacy, it can occur that the content of the stated tasks can reveal information of the end user to the service provider, for example if the task pertains to traffic information on the street, it could be inferred that the end user is in possession of a car. 
+			For the privacy of the participants it is important that the tasks themselves must not leak information about the workers. \\
 			Additional privacy concerns have been identified in \cite{PrivacyAwareMCS}. 
-			The concern of disclosed user identity states that many mobile crowdsourcing systems collect profile informations of their workers, like name, password or email address. 
-			If this data could be breached and retrieved by attackers, then it could have far reaching consequences for the participants. 
-			Again mentioned has been the disclosure of user location and activities, just as in the previous paragraph, but with the added idea that the worker may be aware that his activity and location may be monitored but not to which degree, due to ignorance. 
+			The concern of disclosed user identity states that many mobile crowd-sourcing systems collect profile informations of their workers, like name, password or email address. 
+			If this data could be breached and retrieved by attackers,far reaching consequences for the participants can be the results.
+			Additionally to the previous mentioned disclosure is that the worker may be aware that his activity and location may be monitored but not to which degree, due to ignorance. 
 			A second thought goes to the requirement for users that want to share data about general locations and activity but not for sensitive places. 
 			The lack of user privacy awareness, is the idea that the user does not have the knowledge of how the data will be used and in how much privacy risk he is, and therefore has no choice but to trust the application.\\
 			Indeed the inability to know or deduce the usage of the gathered data for a non technical user, brings further vulnerability. 
-			It could occur that the gathered data is privatized, but if businesses combine this data with further information gathered from other sources could lead to insights about private information of the users. 
+			It could occur that the gathered data is privatized, but if businesses combine this data with further information gathered from other sources, this could lead to insights about private information of the users. 
 			Lastly, one must consider the usage of mobile devices itself due to increased vulnerability to attacks and security breaches. 
 			Mobile devices mostly have limited computational resources to incorporate certain cryptographic protections.\\
-			%The publication "A Survey on Security, Privacy and Trust in Mobile Crowdsourcing" 
-			XYZ et al. (Properly Cite Lo!) explore various schemes for mobile crowd-sourcing networks. 
+			Wei Feng et al. explore various schemes for mobile crowd-sourcing networks (\cite{SecPriTrustMCS}). 
 			The evaluation is based upon the fulfillment of requirements in regard to trust, privacy and security of the schemes. 
 			Especially for guaranteeing privacy, differentially privatize the sensed data and addition of noise, homomorphic encryption for the personal information, or grouping areas of workers together for further generalization, or data aggregation have been proposed in some schemes for example. 
-			Nonetheless, it is difficult to develop a scheme for mobile crowdsourcing that fulfils all three requirements for trust, security and privacy \cite{SecPriTrustMCS}.
+			Nonetheless, it is difficult to develop a scheme for mobile crowdsourcing that fulfils all three requirements for trust, security and privacy.
 		\closesection
 	\closesection
 
